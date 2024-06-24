@@ -52,34 +52,34 @@ img {
 @keyframes slideInFromRight {
     0% {
       transform: translateX(100%);
-      opacity: 0;
+      height: 0;
     }
     100% {
       transform: translateX(0);
-      opacity: 1;
+      height: calc(100vh - 109px);
     }
 }
 
 @keyframes slideOutFromLeft {
     0% {
       transform: translateX(0);
-      opacity: 1;
+      height: calc(100vh - 109px);
     }
     100% {
       transform: translateX(100%);
-      opacity: 0;
+      height: 0;
     }
 }
 
 .menu-window-opened {
     
     opacity: 1 !important;
-    animation: slideInFromRight 0.25s ease-in-out;
+    animation: slideInFromRight 5s ease-in-out;
     
 }
 
 .menu-window-closed {
-    animation: slideOutFromLeft 0.25s ease-in-out;
+    animation: slideOutFromLeft 5s ease-in-out;
     
 }
 
@@ -93,7 +93,7 @@ img {
     gap: 32px;
     opacity: 0;
     z-index: 99;
-    height: calc(100vh - 109px);
+    height: 0;
 }
 
 @media(max-width: 1920px){
