@@ -1,4 +1,4 @@
-<nav>
+<nav [ngStyle]="{'filter:blur(3px)' : openedMenu}">
     <div class="navbar-left">
         <span class="logo">GABOR</span>
     </div>
@@ -12,7 +12,21 @@
             <a href="#">en</a>
         </div>
         <div class="menu-icon">
-            <img src="../../assets/img/menu-icon.png">
+            @if(!openedMenu){
+            <img class="burger-menu-icon" src="../../assets/img/menu-icon.png" (click)="openMenu()">
+            }@else {
+            <img class="burger-menu-icon" src="../../assets/img/close-icon.png" (click)="closeMenu()">
+            }
         </div>
     </div>
 </nav>
+<div class="menu" [ngClass]="{'menu-window-opened': openedMenu , 'menu-window-closed': !openedMenu}">
+    <a href="#">About me</a>
+    <a href="#">Skills</a>
+    <a href="#">Portfolio</a>
+    <div>
+        <a href="#">de</a>
+        <span>|</span>
+        <a href="#">en</a>
+    </div>
+</div>
