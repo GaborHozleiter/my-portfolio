@@ -16,11 +16,19 @@ a, span{
     text-align: left;
     color: white;
     text-decoration: none;
+    white-space: nowrap;
+    &:hover {
+        color: #00B2D9;
+    }
+}
+
+a {
+    cursor: pointer;
 }
 
 .navbar-right {
     display: flex;
-    gap: 16px;
+    gap: 24px;
     margin-right: 100px;
 }
 
@@ -31,4 +39,46 @@ a, span{
 img {
     width: 30px;
     height: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width: 1000px){
+    .navbar-right {
+        margin-right: 50px;
+    }
+    
+    .navbar-left {
+        margin-left: 50px;
+    }
+}
+
+@media(max-width: 700px){
+    .navbar-right {
+        gap: 16px;
+    }
+}
+
+@media(max-width: 650px){
+    a, span {
+        display: none;
+    }
+
+    .logo {
+        display: block;
+    }
+
+    img {
+        display: block;
+    }
+}
+
+@media(max-width: 400px){
+    .navbar-right {
+        margin-right: 10px;
+    }
+    
+    .navbar-left {
+        margin-left: 10px;
+    }
 }
