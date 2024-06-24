@@ -1,12 +1,13 @@
 nav {
-    width: 100vw;
-    max-width: 1920px;
+    width: 1920px;
     height: 109px;
     background-color: #141d2f;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: sticky;
+    top: 0;
+    left: calc(50vw - 960px); 
 }
 
 a, span{
@@ -93,6 +94,14 @@ img {
     opacity: 0;
     z-index: 99;
     height: calc(100vh - 109px);
+}
+
+@media(max-width: 1920px){
+    nav {
+        left: 0;
+        width: 100vw;
+        max-width: 100%;
+    }
 }
 
 @media(max-width: 1000px){
