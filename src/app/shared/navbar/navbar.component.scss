@@ -29,6 +29,10 @@ a {
     cursor: pointer;
 }
 
+span {
+    cursor: default;
+}
+
 .navbar-right {
     display: flex;
     gap: 24px;

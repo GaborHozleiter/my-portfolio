@@ -4,6 +4,7 @@
     position: absolute;
     position: relative;
     left: calc(50% - 960px);
+    overflow: hidden;
 }
 
 header {
@@ -162,6 +163,22 @@ button {
     left: 145px;
     gap: 32px;
     display: flex;
+}
+
+.shadow-cont-left {
+    position: absolute;
+    bottom: calc(50% - 350px);
+    left: -500px;
+}
+
+.shadow-cont-right {
+    position: absolute;
+    bottom: calc(50% - 350px);
+    right: -500px;
+}
+
+.shadow-left, .shadow-right {
+    min-width: 1200px;
 }
 
 @media(max-width: 1920px){
