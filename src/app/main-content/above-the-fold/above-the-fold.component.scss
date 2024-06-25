@@ -2,10 +2,10 @@
     width: 1920px;
     height: calc(100vh - 109px);
     background-color: aqua;
-    margin-top: calc(-100vh + 109px);
+    //margin-top: calc(-100vh + 109px);
     position: absolute;
     position: relative;
-    left: calc(50vw - 960px);
+    left: calc(50% - 960px);
 }
 
 header {
@@ -98,7 +98,7 @@ button {
     transform: rotate(90deg);
     position: absolute;
     bottom: 135px;
-    left: calc(50% + 780px);
+    left: calc(50% + 760px);
 }
 
 .scroll-down-text {
@@ -115,8 +115,17 @@ button {
     width: 24px;
     height: 24px;
     position: absolute;
-    left: calc(50% + 832px);
+    left: calc(50% + 812px);
     bottom: 50px;
+}
+
+.blue-line {
+    height: 4px;
+    position: absolute;
+    width: 5000px;
+    right: 1820px;
+    bottom: 50px;
+    background-color: #00BEE8;
 }
 
 @media(max-width: 1920px){
