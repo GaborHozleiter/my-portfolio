@@ -1,8 +1,7 @@
 .above-the-fold-container {
     width: 1920px;
     height: calc(100vh - 109px);
-    background-color: aqua;
-    //margin-top: calc(-100vh + 109px);
+    //background-color: aqua;
     position: absolute;
     position: relative;
     left: calc(50% - 960px);
@@ -122,10 +121,18 @@ button {
 .blue-line {
     height: 4px;
     position: absolute;
-    width: 5000px;
-    right: 1820px;
+    width: 3000px;
+    left: calc(50% - 2830px);
     bottom: 50px;
     background-color: #00BEE8;
+}
+
+.icons-cont{
+    position: absolute;
+    bottom: 30px;
+    left: 95px;
+    gap: 32px;
+    display: flex;
 }
 
 @media(max-width: 1920px){
@@ -136,10 +143,15 @@ button {
     }
 
     .srcoll-down-cont {
-        left: calc(100vw - 155px);
+        left: calc(100vw - 205px);
     }
     
     .scroll-down-arrow {
-        left: calc(100vw - 100px);
+        left: calc(100vw - 150px);
+    }
+
+    .blue-line {
+        left: 0;
+        width: 50px;
     }
 }

@@ -1,6 +1,17 @@
 .about-me-cont {
     width: 1920px;
     max-width: 100%;
-    height: 100vh;
+    height: 200vh;
+    position: absolute;
+    left: calc(50vw - 960px); 
     background-color: greenyellow;
+}
+
+@media(max-width:1920px){
+    .about-me-cont{
+        width: 100vw;
+        max-width: 100%;
+        left: 0;
+    }
+   
 }
