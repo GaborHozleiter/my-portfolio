@@ -1,6 +1,58 @@
 .above-the-fold-container {
     width: 1920px;
-    height: 100vh;
+    height: calc(100vh - 109px);
     background-color: aqua;
-    margin-top: -100vh;
+    margin-top: calc(-100vh + 109px);
+    position: absolute;
+    position: relative;
+    left: calc(50vw - 960px);
+}
+
+header {
+    width: 1400px;
+    height: 600px;
+    position: absolute;
+    left: calc(50% - 700px);
+    top: calc(50% - 300px);
+    background-color: #4B47FF;
+}
+
+.i-am {
+    font-family: 'Poppins';
+    font-size: 90px;
+    font-weight: 400;
+    line-height: 108px;
+    text-align: center;
+    color: white;
+}
+
+.name {
+    font-family: 'Poppins';
+    font-size: 128px;
+    font-weight: 700;
+    line-height: 153.6px;
+    text-align: left;
+    color: white;
+    position: absolute;
+    left: calc(50vw - 512px);
+    top: calc(50vh - 154px);
+    margin-bottom: 109px;
+}
+
+.profession {
+    font-family: 'Poppins';
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 76.8px;
+    text-align: left;
+    color: #4B47FF;
+
+}
+
+@media(max-width: 1920px){
+    .above-the-fold-container {
+        width: 100vw;
+        max-width: 100%;
+        left: 0;
+    }
 }
