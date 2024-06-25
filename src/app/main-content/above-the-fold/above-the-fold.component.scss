@@ -9,44 +9,114 @@
 }
 
 header {
-    width: 1400px;
-    height: 600px;
+    width: 960px;
+    height: 200px;
     position: absolute;
-    left: calc(50% - 700px);
-    top: calc(50% - 300px);
-    background-color: #4B47FF;
+    left: calc(50% - 480px);
+    top: calc(50% - 155px);
+    background-color: yellow;
+    position: relative;
+}
+
+.header-right {
+    position: absolute;
+    height: 100%;
+    background-color: green;
+    width: 850px;
+    z-index: 3;
+    top: 0;
+    right: 0;
+}
+
+.header-left {
+    transform: rotate(-90deg);
+    position: absolute;
+    z-index: 2;
+    top: 55px;
+    left: -15px;
+    background-color: red;
+
 }
 
 .i-am {
     font-family: 'Poppins';
-    font-size: 90px;
+    font-size: 75px;
     font-weight: 400;
     line-height: 108px;
     text-align: center;
     color: white;
+    margin: 0;
 }
 
 .name {
     font-family: 'Poppins';
-    font-size: 128px;
+    font-size: 106px;
     font-weight: 700;
     line-height: 153.6px;
     text-align: left;
     color: white;
     position: absolute;
-    left: calc(50vw - 512px);
-    top: calc(50vh - 154px);
+    left: 0;
+    top: 0;
     margin-bottom: 109px;
+    white-space: nowrap;
 }
 
 .profession {
     font-family: 'Poppins';
-    font-size: 64px;
+    font-size: 66px;
     font-weight: 400;
     line-height: 76.8px;
     text-align: left;
     color: #4B47FF;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
 
+button {
+    width: 165px;
+    height: 58px;
+    padding: 15px 30px 15px 30px;
+    border-radius: 10px;
+    background-color: #00BEE8;
+    box-shadow: 4px 4px 4px 0px #00000040;
+    cursor: pointer;
+    font-family: 'Poppins';
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 27.6px;
+    text-align: left;
+    color: white;
+    white-space: nowrap;
+    position: absolute;
+    left: calc(50% - 82.5px);
+    top: calc(50% + 70px);
+}
+
+.srcoll-down-cont {
+    transform: rotate(90deg);
+    position: absolute;
+    bottom: 135px;
+    left: calc(50% + 780px);
+}
+
+.scroll-down-text {
+    font-family: Poppins;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 27.6px;
+    text-align: left;
+    color: white;
+    white-space: nowrap;
+}
+
+.scroll-down-arrow {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: calc(50% + 832px);
+    bottom: 50px;
 }
 
 @media(max-width: 1920px){
@@ -54,5 +124,13 @@ header {
         width: 100vw;
         max-width: 100%;
         left: 0;
+    }
+
+    .srcoll-down-cont {
+        left: calc(100vw - 155px);
+    }
+    
+    .scroll-down-arrow {
+        left: calc(100vw - 100px);
     }
 }
