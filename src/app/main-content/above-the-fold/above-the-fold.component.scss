@@ -1,26 +1,26 @@
 .above-the-fold-container {
     width: 1920px;
     height: calc(100vh - 109px);
-    //background-color: aqua;
     position: absolute;
     position: relative;
     left: calc(50% - 960px);
 }
 
 header {
-    width: 960px;
+    width: 930px;
     height: 200px;
     position: absolute;
-    left: calc(50% - 480px);
+    left: calc(50% - 465px);
     top: calc(50% - 155px);
-    background-color: yellow;
     position: relative;
+    span {
+        cursor: default;
+    }
 }
 
 .header-right {
     position: absolute;
     height: 100%;
-    background-color: green;
     width: 850px;
     z-index: 3;
     top: 0;
@@ -32,9 +32,7 @@ header {
     position: absolute;
     z-index: 2;
     top: 55px;
-    left: -15px;
-    background-color: red;
-
+    left: -33px;
 }
 
 .i-am {
@@ -78,9 +76,12 @@ button {
     height: 58px;
     padding: 15px 30px 15px 30px;
     border-radius: 10px;
+    border: none;
     background-color: #00BEE8;
     box-shadow: 4px 4px 4px 0px #00000040;
     cursor: pointer;
+    transition: transform 0.3s ease-out;
+    transform-origin: top center;
     font-family: 'Poppins';
     font-size: 23px;
     font-weight: 400;
@@ -90,14 +91,42 @@ button {
     white-space: nowrap;
     position: absolute;
     left: calc(50% - 82.5px);
-    top: calc(50% + 70px);
+    top: calc(50% + 150px);
+    &:hover {
+        transform: scaleX(1.1) scaleY(1.1);
+        background-color: #4B47FF;
+    }
+    &:active {
+        color: black;
+        background-color: white;
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(50);
+    }
+    50% {
+        transform: translateY(-70px);
+    }
+    100% {
+        transform: translateX(50);
+    }
+}
+
+.anim-cont {
+    animation: move 1s infinite;
+    position: absolute;
+    position: relative;
+    top: calc(100% - 190px);
 }
 
 .srcoll-down-cont {
     transform: rotate(90deg);
     position: absolute;
-    bottom: 135px;
+    bottom: 120px;
     left: calc(50% + 760px);
+    cursor: default;
 }
 
 .scroll-down-text {
@@ -115,14 +144,14 @@ button {
     height: 24px;
     position: absolute;
     left: calc(50% + 812px);
-    bottom: 50px;
+    bottom: 35px;
 }
 
 .blue-line {
     height: 4px;
     position: absolute;
     width: 3000px;
-    left: calc(50% - 2830px);
+    left: calc(50% - 2780px);
     bottom: 50px;
     background-color: #00BEE8;
 }
@@ -130,7 +159,7 @@ button {
 .icons-cont{
     position: absolute;
     bottom: 30px;
-    left: 95px;
+    left: 145px;
     gap: 32px;
     display: flex;
 }
@@ -143,15 +172,177 @@ button {
     }
 
     .srcoll-down-cont {
-        left: calc(100vw - 205px);
+        left: calc(100vw - 210px);
     }
     
     .scroll-down-arrow {
-        left: calc(100vw - 150px);
+        left: calc(100vw - 158px);
+    }
+
+    .blue-line {
+        left: 0;
+        width: 100px;
+    }
+}
+
+@media(max-width: 1050px){
+    header {
+        width: 730px;
+        height: 180px;
+        left: calc(50% - 365px);
+        top: calc(50% - 145px);
+    }
+    
+    .header-right {
+        width: 650px;
+    }
+    
+    .header-left {
+        top: 45px;
+        left: -5px;
+    
+    }
+    
+    .i-am {
+        font-size: 50px;
+    }
+    
+    .name {
+        font-size: 82px;
+    }
+    
+    .profession {
+        font-size: 52px;
+    }
+}
+
+@media(max-width: 1000px){
+    .srcoll-down-cont {
+        left: calc(100vw - 155px);
+    }
+    
+    .scroll-down-arrow {
+        left: calc(100vw - 100px);
     }
 
     .blue-line {
         left: 0;
         width: 50px;
+    }
+
+    .icons-cont{
+        left: 95px;
+    }
+}
+
+@media(max-width: 850px){
+    header {
+        width: 570px;
+        height: 170px;
+        left: calc(50% - 285px);
+        top: calc(50% - 140px);
+    }
+    
+    .header-right {
+        width: 500px;
+    }
+    
+    .header-left {
+        top: 45px;
+        left: 3px;
+    
+    }
+    
+    .i-am {
+        font-size: 44px;
+    }
+    
+    .name {
+        font-size: 62px;
+    }
+    
+    .profession {
+        font-size: 39px;
+    }
+}
+
+@media(max-width: 650px){
+    header {
+        width: 420px;
+        height: 160px;
+        left: calc(50% - 225px);
+        top: calc(50% - 135px);
+    }
+    
+    .header-right {
+        width: 350px;
+    }
+    
+    .header-left {
+        top: 40px;
+        left: 15px;
+    
+    }
+    
+    .i-am {
+        font-size: 34px;
+    }
+    
+    .name {
+        font-size: 44px;
+    }
+    
+    .profession {
+        font-size: 32px;
+    }
+}
+
+@media(max-width: 450px){
+    header {
+        width: 320px;
+        height: 160px;
+        left: calc(50% - 160px);
+        top: calc(50% - 135px);
+    }
+    
+    .header-right {
+        width: 300px;
+    }
+    
+    .header-left {
+        top: 40px;
+        left: -25px;
+    
+    }
+    
+    .i-am {
+        font-size: 28px;
+    }
+    
+    .name {
+        font-size: 38px;
+    }
+    
+    .profession {
+        font-size: 27px;
+    }
+
+    .srcoll-down-cont, .scroll-down-arrow {
+        display: none;
+    }
+
+    .icons-cont{
+        left: calc(50% - 77px);
+    }
+
+    .blue-line {
+        left: 0;
+        width: calc(50% - 127px);
+    }
+}
+
+@media(max-width: 400px){
+    .blue-line {
+        width: calc(50% - 97px);
     }
 }
