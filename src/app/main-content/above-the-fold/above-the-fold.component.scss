@@ -120,6 +120,7 @@ button {
     position: absolute;
     position: relative;
     top: calc(100% - 190px);
+    z-index: 5;
 }
 
 .srcoll-down-cont {
@@ -163,6 +164,7 @@ button {
     left: 145px;
     gap: 32px;
     display: flex;
+    z-index: 5;
 }
 
 .shadow-cont-left {
