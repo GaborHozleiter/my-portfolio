@@ -10,15 +10,24 @@
                 voluptate assumenda vero aut veritatis.
             </p>
         </div>
-        <div class="about-me-text-cont">
-            <img src="../../../assets/img/bulb.png" class="bulb">
+        <div class="about-me-text-cont" (mouseover)="changeBulbImage()">
+            @if(!hoveredBulb){
+                <img src="../../../assets/img/bulb.png" class="bulb">
+            } @else {
+                <img src="../../../assets/img/bulb hovered.png" class="bulb">
+            }
+            
             <p class="debut">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem velit nihil dicta
                 exercitationem alias
                 aliquam, quia pariatur corporis! Eum qui voluptas eos dolor dignissimos tempore
             </p>
         </div>
-        <div class="about-me-text-cont">
-            <img src="../../../assets/img/puzzle.png" class="puzzle">
+        <div class="about-me-text-cont"  (mouseover)="changePuzzleImage()">
+            @if(!hoveredPuzzle){
+                <img src="../../../assets/img/puzzle.png" class="puzzle">
+            } @else {
+                <img src="../../../assets/img/puzzle hovered.png" class="puzzle">        
+            }
             <p class="debut">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem velit nihil dicta
                 exercitationem alias
                 aliquam, quia pariatur corporis! Eum qui voluptas eos dolor dignissimos tempore
@@ -26,6 +35,9 @@
         </div>
     </div>
     <div class="img-cont">
-
+        <img src="../../../assets/img/hero character photo.png">
+    </div>
+    <div>
+        <img class="backgr-img" src="../../../assets/img/Vector (2).png">
     </div>
 </div>
