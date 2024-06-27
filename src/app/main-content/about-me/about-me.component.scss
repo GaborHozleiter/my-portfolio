@@ -65,6 +65,7 @@ h1 {
     height: 100%;
     display: flex;
     justify-content: center;
+    z-index: 2;
     img {
         object-fit: cover;
         z-index: 10;
@@ -82,15 +83,40 @@ h1 {
     z-index: 10;
 }
 
+.shadow-cont {
+    
+}
+
+.shadow {
+    position: absolute;
+    bottom: -700px;
+    left: calc(50% + 150px);
+    width: 700px;
+    height: 700px;
+    object-fit: cover;
+}
+
 @media(max-width:1920px){
     .about-me-cont{
         width: 100vw;
         max-width: 100%;
         left: 0;
     }
+
+    .shadow {
+        left:calc(100vw - 800px);
+        width: 750px;
+        height: 750px;
+        object-fit: cover;
+    }
 }
 
 @media(max-width:1500px){
+    .shadow {
+        left:calc(50vw - 375px);
+        margin-left: 250px;
+    }
+
     .img-cont {
         img {
             margin-left: -100px;
@@ -99,6 +125,12 @@ h1 {
 }
 
 @media(max-width:1300px){
+    @media(max-width:1500px){
+        .shadow {
+            margin-left: 180px;
+        }
+    }
+
     .img-cont {
         img {
             margin-left: -200px;
@@ -107,6 +139,12 @@ h1 {
 }
 
 @media(max-width:1150px){
+    @media(max-width:1500px){
+        .shadow {
+            margin-left: 0px;
+        }
+    }
+
     .about-me-cont {
         justify-content: flex-start;
         align-items: center;
@@ -155,6 +193,13 @@ h1 {
 }
 
 @media(max-width: 800px){
+    .shadow {
+        width: 650px;
+        height: 650px;
+        left:calc(50vw - 325px);
+        bottom: -660px;
+    }
+
     .about-me-text-description {
         margin-bottom: 720px;
     }
@@ -192,6 +237,13 @@ h1 {
 }
 
 @media(max-width: 650px){
+    .shadow {
+        width: 400px;
+        height: 400px;
+        left:calc(50vw - 200px);
+        bottom: -660px;
+    }
+
     .about-me-text-description {
         margin-bottom: 740px;
     }
@@ -236,6 +288,13 @@ h1 {
 }
 
 @media(max-width: 450px){
+    .shadow {
+        width: 350px;
+        height: 350px;
+        left:calc(50vw - 175px);
+        bottom: -660px;
+    }
+
     .img-cont {
         img {
             width: 300px;
@@ -247,6 +306,13 @@ h1 {
 }
 
 @media(max-width: 400px){
+    .shadow {
+        width: 300px;
+        height: 300px;
+        left:calc(50vw - 150px);
+        bottom: -630px;
+    }
+
     .about-me-cont {
         height: 1400px;
         margin-bottom: 200px;
