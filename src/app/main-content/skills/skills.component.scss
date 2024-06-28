@@ -14,7 +14,7 @@
 
 .icons-cont {
     width: 700px;
-    height: 630px;
+    height: 700px;
     background-color: aqua;
     display: flex;
     flex-wrap: wrap;
@@ -28,6 +28,7 @@
     align-items: center;
     flex-direction: column;
     margin: 30px;
+    gap: 12px;
 }
 
 .icon-name {
@@ -132,20 +133,28 @@
 
     .skills-text-cont {
         width: calc(100% - 200px);
-        height: 260px;
+        height: 200px;
         margin-right: 100px;
         margin-left: 100px;
     }
 
     .icons-cont {
         width: calc(100% - 200px);
-        height: 660px;
+        height: 700px;
         background-color: aqua;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         gap: 32px;
         margin-left: 0px;
+    }
+
+    .get-in-btn {
+        width: 200px;
+        height: 58px;
+        position: absolute;
+        top: 920px;
+        left: calc(50% - 100px);
     }
 }
 
@@ -153,19 +162,55 @@
 
     .skills-text-cont {
         width: calc(100% - 100px);
-        height: 260px;
         margin-right: 50px;
         margin-left: 50px;
+        position: relative;
     }
 
     .icons-cont {
         width: calc(100% - 100px);
-        height: 660px;
-        background-color: aqua;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 32px;
-        margin-left: 0px;
+    }
+}
+
+@media(max-width: 900px){
+    .skills-title {
+        font-size: 70px;
+    }
+
+    .row {
+        gap: 0px;
+    }
+
+    .icons-cont {
+        gap: 0px;
+        height: 600px;
+    }
+
+    .get-in-btn {
+        top: 820px;
+    }
+}
+
+@media(max-width: 700px){
+    .skill-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .icon-name {
+        max-width: 120px;
+        text-align: center;
+    }
+
+    .skill-icons-cont {
+        margin: 18px;
+    }
+
+    .icons-cont {
+        height: 450px;
+    }
+
+    .get-in-btn {
+        top: 670px;
     }
 }
