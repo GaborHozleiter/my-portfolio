@@ -139,7 +139,7 @@
     }
 
     .icons-cont {
-        width: calc(100% - 200px);
+        width: calc(100% - 150px);
         height: 700px;
         background-color: aqua;
         display: flex;
@@ -147,6 +147,7 @@
         flex-wrap: wrap;
         gap: 32px;
         margin-left: 0px;
+        padding-right: 40px;
     }
 
     .get-in-btn {
@@ -155,6 +156,11 @@
         position: absolute;
         top: 920px;
         left: calc(50% - 100px);
+    }
+
+    .icon-name {
+        max-width: 120px;
+        text-align: center;
     }
 }
 
@@ -197,11 +203,6 @@
         height: 45px;
     }
 
-    .icon-name {
-        max-width: 120px;
-        text-align: center;
-    }
-
     .skill-icons-cont {
         margin: 18px;
     }
@@ -212,5 +213,28 @@
 
     .get-in-btn {
         top: 670px;
+    }
+}
+
+@media(max-width: 600px){
+    .skill-icons-cont {
+        margin: 10px;
+    }
+
+    .icons-cont {
+        height: 410px;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+    }
+
+    .get-in-btn {
+        top: 630px;
+    }
+}
+
+@media(max-width: 500px){
+    .icons-cont {
+        width: calc(100% - 150px);
+        padding-right: 20px;
     }
 }
