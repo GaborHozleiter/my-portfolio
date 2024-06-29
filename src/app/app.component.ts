@@ -4,10 +4,11 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { AboveTheFoldComponent } from './main-content/above-the-fold/above-the-fold.component';
 import { AboutMeComponent } from './main-content/about-me/about-me.component';
 import { SkillsComponent } from './main-content/skills/skills.component';
+import { PortfolioComponent } from './main-content/portfolio/portfolio.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, AboveTheFoldComponent, AboutMeComponent, SkillsComponent],
+  imports: [RouterOutlet, NavbarComponent, AboveTheFoldComponent, AboutMeComponent, SkillsComponent, PortfolioComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
