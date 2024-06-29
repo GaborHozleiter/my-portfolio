@@ -31,8 +31,8 @@
     transition: transform 1s;
     transform-style: preserve-3d;
     &:hover {
-        transform: rotateY(360deg);
-        filter: drop-shadow(0 0 0.75rem #FF24BD);
+        transform: rotateY(360deg); 
+        filter: drop-shadow(0 0 0.75rem #4B47FF);
     }
 }
 
@@ -116,6 +116,10 @@
 .icon-name {
     max-width: 100px;
     text-align: center;
+}
+
+.mat-design {
+    margin-top: 14px;
 }
 
 @media(max-width:1920px){
