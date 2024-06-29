@@ -6,4 +6,16 @@
     //background-color: #141d2f;
     background-color: aquamarine;
     position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 33px;
+    padding-top: 33px;
+}
+
+@media(max-width:1920px){
+    .portfolio-cont {
+        width: 100vw;
+        max-width: 100%;
+        left: 0;
+    }
 }
