@@ -93,6 +93,7 @@ button {
     position: absolute;
     left: calc(50% - 82.5px);
     top: calc(50% + 150px);
+    z-index: 5;
     &:hover {
         transform: scaleX(1.1) scaleY(1.1);
         background-color: #4B47FF;
@@ -217,13 +218,13 @@ button {
     }
     
     .header-left {
-        top: 45px;
-        left: -5px;
+        top: 49px;
+        left: 0px;
     
     }
     
     .i-am {
-        font-size: 50px;
+        font-size: 54px;
     }
     
     .name {
@@ -267,8 +268,8 @@ button {
     }
     
     .header-left {
-        top: 45px;
-        left: 3px;
+        top: 46px;
+        left: 2px;
     
     }
     
@@ -298,8 +299,8 @@ button {
     }
     
     .header-left {
-        top: 40px;
-        left: 15px;
+        top: 43px;
+        left: 17px;
     
     }
     
@@ -313,6 +314,21 @@ button {
     
     .profession {
         font-size: 32px;
+    }
+
+    .srcoll-down-cont, .scroll-down-arrow {
+        display: none;
+    }
+}
+
+@media(max-width:500px){
+    button {
+        width: 133px;
+        height: 58px;
+        font-size: 16px;
+        text-align: left;
+        left: calc(50% - 67px);
+        top: calc(50% + 150px);
     }
 }
 
@@ -329,13 +345,13 @@ button {
     }
     
     .header-left {
-        top: 40px;
-        left: -25px;
+        top: 42px;
+        left: -29px;
     
     }
     
     .i-am {
-        font-size: 28px;
+        font-size: 32px;
     }
     
     .name {
@@ -344,10 +360,6 @@ button {
     
     .profession {
         font-size: 27px;
-    }
-
-    .srcoll-down-cont, .scroll-down-arrow {
-        display: none;
     }
 
     .icons-cont{
