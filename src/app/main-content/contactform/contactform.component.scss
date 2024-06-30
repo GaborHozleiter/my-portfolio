@@ -1,13 +1,15 @@
 .form-cont {
     position: relative;
+    height: 600px;
+    width: 620px;
 }
 
 .name-inputfield, .email-inputfield, .message-inputfield {
+    width: calc(100% - 50px);
     border-radius: 10px;
     background-color: #141D2F;
-    padding: 15px 25px 15px 25px;
     gap: 10px;
-    border: 1px solid #FF4747;
+    border: 1px solid #4B47FF;
     font-family: 'Poppins';
     font-size: 16px;
     font-weight: 400;
@@ -16,6 +18,133 @@
     color: white;
     cursor: text;
     &:hover {
-        border: 1px solid #D61CE6 !important;
+        border: 1px solid #1CE6B6;
     }
+    &:focus {
+        outline: none;
+        border: 1px solid greenyellow;
+    }
+}
+
+.name-inputfield, .email-inputfield {
+    padding: 15px 50px 15px 25px;
+}
+
+.message-inputfield {
+    padding: 15px 50px 15px 25px;
+    height: 200px;
+}
+
+.input-warn {
+    color: #E61C40;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 19.2px;
+    text-align: left;
+}
+
+.name-pos {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.name-input-icon {
+    position: absolute;
+    right: -12px;
+    top: 12px;
+}
+
+.message-input-icon {
+    position: absolute;
+    right: -12px;
+    top: 190px;
+}
+
+.email-input-icon {
+    position: absolute;
+    right: -12px;
+    top: 102px;
+}
+
+.name-warn-pos {
+    position: absolute;
+    position: relative;
+    top: 55px;
+    left: 0;
+}
+
+.email-pos {
+    position: absolute;
+    top: 90px;
+    left: 0;
+}
+
+.email-warn-pos {
+    position: absolute;
+    left: 0;
+    top: 150px;
+}
+
+.message-pos {
+    position: absolute;
+    top: 180px;
+    left: 0;
+}
+
+.message-warn-pos {
+    position: absolute;
+    left: 0;
+    top: 415px;
+}
+
+.checkbox {
+    width: 12px;
+    height: 12x;
+    position: absolute;
+    bottom: 110px;
+    left: 0;
+}
+
+.checkbox-text {
+    position: absolute;
+    bottom: 107px;
+    left: 20px;
+}
+
+.checkbox-text {
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 19.2px;
+    text-align: left;
+    color: white;
+}
+
+.checkbox-warn-text {
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+}
+
+a {
+    color: #4B47FF;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.submit-button {
+    width: 253px;
+    height: 58px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 4px 4px 4px 0px #00000040;
+    background-image: url('../../../assets/img/button-invalid.png');
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 126.5px);
 }

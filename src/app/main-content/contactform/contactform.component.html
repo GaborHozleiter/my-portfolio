@@ -1,38 +1,43 @@
 <div>
-    <form>
+    <form class="form-cont">
         <div>
             <label for="name"></label>
-            <input type="text" placeholder="Your name" required class="name-inputfield">
+            <input type="text" placeholder="Your name" required class="name-inputfield name-pos">
+            <div class="name-warn-pos">
+                <span class="input-warn">Your name is required!</span>
+            </div>
             <div>
-                <span class="input-warn" >Your name is required!</span>
+                <img src="../../../assets/img/invalid-icon.png" class="name-input-icon">
             </div>
         </div>
         <div>
             <label for="email"></label>
-            <input type="email" id="email" name="email" placeholder="Your email" required class="email-inputfield">
+            <input type="email" id="email" name="email" placeholder="Your email" required
+                class="email-inputfield email-pos">
             <div>
-                <span class="input-warn">Your email is required!</span>
+                <span class="input-warn email-warn-pos">Your email is required!</span>
+            </div>
+            <div>
+                <img src="../../../assets/img/invalid-icon.png" class="email-input-icon">
             </div>
         </div>
         <div>
             <label for="message"></label>
-            <textarea placeholder="Your message" required class="message-inputfield"></textarea>
+            <textarea placeholder="Your message" required class="message-inputfield message-pos"></textarea>
             <div>
-                <span class="input-warn">Your message is empty!</span>
+                <span class="input-warn message-warn-pos">Your message is empty!</span>
+            </div>
+            <div>
+                <img src="../../../assets/img/invalid-icon.png" class="message-input-icon">
             </div>
         </div>
-        <div class="check-box-cont">
-            <img src="" class="check-box">
-            <span class="check-box-text">
-                I've read the <a href="">privacy policy</a> and agree to the processing of my data as outlined.
-            </span>
-            <div>
-                <span class="input-warn">Please accept the privacy policy!</span>
-            </div>
-        </div>
+        <img src="../../../assets/img/checkbox-invalid-default.png" class="checkbox">
+        <span class="checkbox-text">
+            I've read the <a href="">privacy policy</a> and agree to the processing of my data as outlined.
+        </span>
+        <span class="input-warn checkbox-warn-text">Please accept the privacy policy!</span>
         <div>
-            <input type="submit" value="" class="submit-button">
+            <input type="submit" value="" class="submit-button button-pos">
         </div>
     </form>
 </div>
-

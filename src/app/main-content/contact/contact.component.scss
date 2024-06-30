@@ -1,6 +1,6 @@
 .contact-cont {
     width: 1920px;
-    height: 860px;
+    height: 960px;
     background-color: #141D2F;
     position: relative;
     display: flex;
@@ -91,9 +91,8 @@
 
 .contact-form-cont {
     position: absolute;
-    background-color: aqua;
-    width: 617px;
-    height: 504px;
+    width: 620px;
+    height: 600px;
     top: 250px;
     right: 100px;
     gap: 32px;
@@ -102,7 +101,7 @@
 .go-up-btn-cont {
     position: absolute;
     right: 100px;
-    top: 780px;
+    top: 880px;
     width: 39px;
     height: 39px;
     cursor: pointer;
@@ -110,7 +109,7 @@
 
 .parting-line {
     position: absolute;
-    top: 850px;
+    top: 950px;
     width: 100vw;
     height: 4px;
     background-color: #00BEE8;
