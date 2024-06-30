@@ -158,4 +158,20 @@
         width: 25px;
         left: 0;
     }
+
+    .go-up-btn-cont {
+        right: 70px;
+    }
+}
+
+@media(max-width:700px){
+    .contact-form-cont {
+        top: 450px;
+        left: 60px;
+        width: calc(100vw - 100px);
+    }
+
+    .go-up-btn-cont {
+        display: none;
+    }
 }
