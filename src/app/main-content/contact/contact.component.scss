@@ -1,0 +1,116 @@
+.contact-cont {
+    width: 1980px;
+    height: 860px;
+    background-color: #141D2F;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.contact-header {
+    position: absolute;
+    width: 376px;
+    height: 108px;
+    left: calc(50% - 188px);
+    top: 50px;
+    span {
+        font-family: 'Poppins';
+        font-size: 90px;
+        font-weight: 700;
+        line-height: 108px;
+        text-align: center;
+        color: white;
+    }
+}
+
+.contact-header-line {
+    position: absolute;
+    width: calc(50% - 238px);
+    right: 0;
+    top: 104px;
+    height: 4px;
+    background-color: #00BEE8;
+}
+
+.problem-solver-line {
+    position: absolute;
+    width: 50px;
+    height: 4px;
+    top: 269px;
+    left: 0;
+    background-color: #00BEE8;
+}
+
+.problem-solver-cont {
+    position: absolute;
+    left: 100px;
+    top: 250px;
+    width: 473px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.problem-solver-title {
+    font-family: 'Poppins';
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.4px;
+    text-align: left;
+    color: white;
+}
+
+.problem-solver-description {
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+    color: white;
+}
+
+.problem-solver-ask {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+    color: white;
+}
+
+.problem-solver-contact {
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    text-align: left;
+    color:white;
+}
+
+.contact-form-cont {
+    position: absolute;
+    width: 617px;
+    height: 504px;
+    top: 250px;
+    right: 100px;
+    gap: 32px;
+}
+
+.go-up-btn-cont {
+    position: absolute;
+    right: 100px;
+    top: 780px;
+    width: 39px;
+    height: 39px;
+    cursor: pointer;
+}
+
+.parting-line {
+    position: absolute;
+    top: 850px;
+    width: 100vw;
+    height: 4px;
+    background-color: #00BEE8;
+}
