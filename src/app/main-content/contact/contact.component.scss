@@ -3,7 +3,7 @@
     max-width: 100%;
     position: absolute;
     left: calc(50vw - 960px); 
-    height: 1960px;
+    height: 960px;
     background-color: #141D2F;
     position: relative;
 }
@@ -120,6 +120,42 @@
     .contact-cont {
         width: 100vw;
         max-width: 100%;
+        left: 0;
+    }
+}
+
+@media(max-width:1300px){
+    .contact-cont {
+        height: 2160px;
+    }
+
+    .contact-form-cont {
+        top: 450px;
+        left: calc(50vw - 295px);
+        right: 0px;
+    }
+
+    .problem-solver-cont {
+        width: calc(100% - 200px);
+    }
+
+    .go-up-btn-cont {
+        top: 1080px;
+    }
+    
+    .parting-line {
+        top: 1150px;
+    }
+}
+
+@media(max-width:1000px){
+    .problem-solver-cont {
+        left: 50px;
+        width: calc(100% - 100px);
+    }
+
+    .problem-solver-line {
+        width: 25px;
         left: 0;
     }
 }
