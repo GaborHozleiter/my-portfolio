@@ -1,10 +1,11 @@
 .contact-cont {
     width: 1920px;
-    height: 960px;
+    max-width: 100%;
+    position: absolute;
+    left: calc(50vw - 960px); 
+    height: 1960px;
     background-color: #141D2F;
     position: relative;
-    display: flex;
-    align-items: center;
 }
 
 .contact-header {
@@ -100,7 +101,7 @@
 
 .go-up-btn-cont {
     position: absolute;
-    right: 100px;
+    right: 120px;
     top: 880px;
     width: 39px;
     height: 39px;
@@ -113,4 +114,12 @@
     width: 100vw;
     height: 4px;
     background-color: #00BEE8;
+}
+
+@media(max-width:1920px){
+    .contact-cont {
+        width: 100vw;
+        max-width: 100%;
+        left: 0;
+    }
 }
