@@ -1,7 +1,6 @@
 .portfolio-cont {
     width: 1920px;
     max-width: 100%;
-    height: 100vh;
     left: calc(50vw - 960px); 
     background-color: #141d2f;
     position: relative;
@@ -9,7 +8,8 @@
     justify-content: center;
     align-items: center;
     gap: 33px;
-    padding-top: 33px;
+    padding-top: 120px;
+    padding-bottom: 50px;
 }
 
 @media(max-width:1920px){
@@ -17,5 +17,11 @@
         width: 100vw;
         max-width: 100%;
         left: 0;
+    }
+}
+
+@media(max-width:900px){
+    .portfolio-cont {
+        flex-direction: column;
     }
 }
