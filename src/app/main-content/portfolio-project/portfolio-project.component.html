@@ -1,16 +1,14 @@
-<div class="portfolio-project">
+<div class="portfolio-project" *ngFor="let project of projects; let i = index">
     <div class="project-img">
-        <img src="../../../assets/img/Pollo loco.png">
+        <img src="{{ project.backgroundNotebook }}">
     </div>
     <div>
-        <img class="project-background" src="../../../assets/img/pollo loco background.png">
+        <img class="project-background" src="{{ project.background }}">
     </div>
     <div class="white-block">
-        <span class="project-name">El Pollo Loco</span>
-        <span class="project-description">Jump, run and throw game based on object-oriented approach. Help Pepe 
-            to find coins and tabasco salsa to fight against the crazy hen.
-        </span>
-        <span class="project-skills">JavaScript | HTML | CSS</span>
+        <span class="project-name">{{ project.name }}</span>
+        <span class="project-description">{{ project.description }}</span>
+        <span class="project-skills">{{ project.skills }}</span>
     </div>
     <div class="buttons-cont">
         <a href="#">

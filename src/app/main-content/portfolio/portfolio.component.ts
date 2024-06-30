@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { PortfolioProjectComponent } from '../portfolio-project/portfolio-project.component';
 
+
 @Component({
   selector: 'app-portfolio',
   standalone: true,
