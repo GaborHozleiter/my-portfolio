@@ -15,6 +15,12 @@
         .white-block  {
             display: flex;
         }
+        .github-button {
+            display: block;
+        }
+        .live-test-button {
+            display: block;
+        }
     }
 }
 
@@ -25,6 +31,7 @@
 .project-background {
     object-fit: cover;
     border-radius: 15px 15px;
+    opacity: 0.1;
     display: none;
 }
 
@@ -37,4 +44,87 @@
     z-index: 3;
     background-color: white;
     display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 27px;
+}
+
+.project-name {
+    font-family: 'Poppins';
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.4px;
+    text-align: center;
+    color: #4B47FF;
+}
+
+.project-description {
+    font-family: Poppins;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 27.6px;
+    text-align: center;
+    color: black;
+}
+
+.project-skills {
+    font-family: 'Poppins';
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 27.6px;
+    text-align: left;
+    color: #00BEE8;
+}
+
+.buttons-cont {
+    position: absolute;
+    top: 130px;
+    left: calc(50% - 185px);
+    width: 370px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.github-button {
+    width: 137px;
+    height: 58px;
+    padding: 15px 30px 15px 30px;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px solid #00BEE8;
+    font-family: Poppins;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 27.6px;
+    text-align: left;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+    &:hover {
+        background-color: #00BEE8;
+    }
+}
+
+.live-test-button {
+    width: 152px;
+    height: 58px;
+    padding: 15px 30px 15px 30px;
+    gap: 10px;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 27.6px;
+    text-align: center;
+    border: none;
+    white-space: nowrap;
+    color:white;
+    cursor: pointer;
+    background-color: #4B47FF;
+    display: none;
+    &:hover {
+        background-color: #00BEE8;
+    }
 }
