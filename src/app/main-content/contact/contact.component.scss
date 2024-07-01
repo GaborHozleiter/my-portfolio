@@ -252,4 +252,27 @@
         top: 240px;
         height: 230px;
     }
+
+    .problem-solver-line {
+        top: 259px;
+    }
+}
+
+@media(max-width:340px){
+    .problem-solver-cont {
+        top: 220px;
+        height: 260px;
+    }
+
+    .contact-cont {
+        height: 1190px;
+    }
+
+    .parting-line {
+        top: 1180px;
+    }
+
+    .contact-form-cont {
+        top: 530px;
+    }
 }
