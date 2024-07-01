@@ -42,6 +42,7 @@
     font-weight: 300;
     line-height: 19.2px;
     text-align: left;
+    display: none;
 }
 
 .name-pos {
@@ -54,18 +55,21 @@
     position: absolute;
     right: 38px;
     top: 12px;
+    display: none;
 }
 
 .message-input-icon {
     position: absolute;
     right: 38px;
     top: 190px;
+    display: none;
 }
 
 .email-input-icon {
     position: absolute;
     right: 38px;
     top: 102px;
+    display: none;
 }
 
 .name-warn-pos {
@@ -100,10 +104,11 @@
 }
 
 .checkbox {
-    width: 12px;
-    height: 12x;
+    width: 18px;
+    height: 18px;
+    z-index: 9999;
     position: absolute;
-    bottom: 110px;
+    bottom: 108px;
     left: 0;
 }
 
@@ -146,14 +151,14 @@ a {
     left: calc(50% - 126.5px);
 }
 
-@media(max-width:669px){
+@media(max-width:677px){
     .checkbox {
-        bottom: 128px;
+        bottom: 127px;
     }
 }
 
-@media(max-width:399px){
+@media(max-width:405px){
     .checkbox {
-        bottom: 148px;
+        bottom: 146px;
     }
 }
