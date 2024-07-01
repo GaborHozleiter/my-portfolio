@@ -42,6 +42,10 @@
     line-height: 108px;
     text-align: center;
     color:white;
+    cursor: default;
+    &:hover {
+        color: #00BEE8;
+    }
 }
 
 .portfolio-header-top {
@@ -58,6 +62,7 @@
     position: absolute;
     left: 100px;
     margin-top: -78px;
+    cursor: default;
 }
 
 @media(max-width:1920px){
