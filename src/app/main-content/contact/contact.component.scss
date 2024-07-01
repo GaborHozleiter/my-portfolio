@@ -164,6 +164,19 @@
     }
 }
 
+@media(max-width:900px){
+    .contact-header {
+        left: calc(50% - 146px);
+        span {
+            font-size: 70px;
+        }
+    }
+
+    .contact-header-line {
+        width: calc(50% - 198px);
+    }
+}
+
 @media(max-width:700px){
     .contact-form-cont {
         top: 450px;
@@ -181,6 +194,20 @@
 
     .contact-cont {
         height: 1110px;
+    }
+}
+
+@media(max-width:500px){
+    .contact-header {
+        left: calc(50vw - 115px);
+        max-width: 230px;
+        span {
+            font-size: 55px;
+        }
+    }
+
+    .contact-header-line {
+        width: calc(50% - 138px);
     }
 }
 
