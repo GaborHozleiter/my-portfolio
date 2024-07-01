@@ -162,7 +162,7 @@ button {
 .icons-cont{
     position: absolute;
     bottom: 30px;
-    left: 145px;
+    left: 95px;
     gap: 32px;
     display: flex;
     z-index: 5;
@@ -201,7 +201,7 @@ button {
 
     .blue-line {
         left: 0;
-        width: 100px;
+        width: 50px;
     }
 }
 
@@ -247,11 +247,11 @@ button {
 
     .blue-line {
         left: 0;
-        width: 50px;
+        width: 25px;
     }
 
     .icons-cont{
-        left: 95px;
+        left: 45px;
     }
 }
 
@@ -366,13 +366,6 @@ button {
         left: calc(50% - 77px);
     }
 
-    .blue-line {
-        left: 0;
-        width: calc(50% - 127px);
-    }
-}
-
-@media(max-width: 400px){
     .blue-line {
         width: calc(50% - 97px);
     }
