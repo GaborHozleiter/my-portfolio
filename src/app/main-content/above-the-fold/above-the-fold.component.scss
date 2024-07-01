@@ -184,6 +184,12 @@ button {
     min-width: 1200px;
 }
 
+img {
+    &:hover {
+        transform: scale(1.4);
+    }
+}
+
 @media(max-width: 1920px){
     .above-the-fold-container {
         width: 100vw;
