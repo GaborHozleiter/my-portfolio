@@ -58,6 +58,7 @@
     flex-direction: column;
     height: 260px;
     margin-right: 100px;
+    cursor: default;
 }
 
 .skills-title-cont {
@@ -72,7 +73,11 @@
     font-weight: 700;
     line-height: 108px;
     text-align: left;
-    color: white;    
+    color: white;   
+    cursor: default;
+    &:hover {
+        color: #00BEE8;
+    } 
 }
 
 .blue-line {
