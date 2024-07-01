@@ -21,12 +21,12 @@
     </div>
 </nav>
 <div class="menu" [ngClass]="{'menu-window-opened': openedMenu , 'menu-window-closed': !openedMenu}">
-    <a href="#about-me-cont">About me</a>
-    <a href="#skills-cont">Skills</a>
-    <a href="#portfolio-cont">Portfolio</a>
+    <a href="#about-me-cont" (click)="closeMenu()">About me</a>
+    <a href="#skills-cont" (click)="closeMenu()">Skills</a>
+    <a href="#portfolio-cont" (click)="closeMenu()">Portfolio</a>
     <div>
-        <a href="#">de</a>
+        <a href="#" (click)="closeMenu()">de</a>
         <span>|</span>
-        <a href="#">en</a>
+        <a href="#" (click)="closeMenu()">en</a>
     </div>
 </div>
