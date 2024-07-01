@@ -108,18 +108,15 @@
 }
 
 .checkbox-text {
-    position: absolute;
-    bottom: 107px;
-    left: 20px;
-}
-
-.checkbox-text {
     font-family: 'Poppins';
     font-size: 14px;
     font-weight: 300;
     line-height: 19.2px;
     text-align: left;
     color: white;
+    position: absolute;
+    bottom: 107px;
+    left: 20px;
 }
 
 .checkbox-warn-text {
@@ -147,4 +144,10 @@ a {
     position: absolute;
     bottom: 0;
     left: calc(50% - 126.5px);
+}
+
+@media(max-width:669px){
+    .checkbox {
+        bottom: 128px;
+    }
 }

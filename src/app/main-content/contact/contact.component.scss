@@ -73,7 +73,7 @@
 }
 
 .problem-solver-ask {
-    font-family: Poppins;
+    font-family: 'Poppins';
     font-size: 16px;
     font-weight: 400;
     line-height: 19.2px;
@@ -126,7 +126,7 @@
 
 @media(max-width:1300px){
     .contact-cont {
-        height: 2160px;
+        height: 1160px;
     }
 
     .contact-form-cont {
@@ -173,5 +173,56 @@
 
     .go-up-btn-cont {
         display: none;
+    }
+
+    .parting-line {
+        top: 1100px;
+    }
+
+    .contact-cont {
+        height: 1110px;
+    }
+}
+
+@media(max-width:485px){
+    .contact-cont {
+        height: 1130px;
+    }
+
+    .parting-line {
+        top: 1120px;
+    }
+    
+    .problem-solver-cont {
+        height: 200px;
+    }
+
+    .contact-form-cont {
+        top: 470px;
+    }
+}
+
+@media(max-width:433px){
+    .contact-cont {
+        height: 1150px;
+    }
+
+    .parting-line {
+        top: 1140px;
+    }
+    
+    .problem-solver-cont {
+        height: 220px;
+    }
+
+    .contact-form-cont {
+        top: 490px;
+    }
+}
+
+@media(max-width:393px){
+    .problem-solver-cont {
+        top: 240px;
+        height: 230px;
     }
 }
