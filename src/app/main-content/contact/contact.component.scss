@@ -6,6 +6,7 @@
     height: 960px;
     background-color: #141D2F;
     position: relative;
+    cursor: default;
 }
 
 .contact-header {
@@ -21,6 +22,9 @@
         line-height: 108px;
         text-align: center;
         color: white;
+        &:hover {
+            color: #00BEE8;
+        }
     }
 }
 
@@ -103,9 +107,13 @@
     position: absolute;
     right: 120px;
     top: 880px;
+    cursor: pointer;
+    background-image: url('../../../assets/img/Go\ up\ button.png');
     width: 39px;
     height: 39px;
-    cursor: pointer;
+    &:hover {
+        background-image: url('../../../assets/img/Go\ Up\ button\ 2.png');
+    }
 }
 
 .parting-line {
