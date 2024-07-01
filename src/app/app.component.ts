@@ -7,6 +7,7 @@ import { SkillsComponent } from './main-content/skills/skills.component';
 import { PortfolioComponent } from './main-content/portfolio/portfolio.component';
 import { ContactComponent } from './main-content/contact/contact.component';
 import { FooterComponent } from './shared/footer/footer.component';
+
 @Component({
   selector: 'app-root',
   standalone: true,
