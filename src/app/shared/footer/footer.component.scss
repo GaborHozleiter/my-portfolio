@@ -66,6 +66,7 @@ footer {
     line-height: 27.6px;
     text-align: left;
     color: white;
+    white-space: nowrap;
 }
 
 .ref-icons {
@@ -77,5 +78,33 @@ footer {
 img {
     &:hover {
         transform: scale(1.4);
+    }
+}
+
+@media(max-width:900px){
+    .footer-cont {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        height: 190px;
+        top: 20px;
+    }
+
+    .imprint-cont {
+        left: calc(50vw - 28.6px);
+        top: 240px;
+    }
+
+    .copyright-cont {
+        position: absolute;
+        top: 85px;
+        left: calc(50vw - 231px);
+    }
+}
+
+@media(max-width: 380px){
+    .ref-icons {
+        gap: 20px;
     }
 }
