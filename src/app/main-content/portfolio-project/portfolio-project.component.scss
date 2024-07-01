@@ -92,7 +92,7 @@
     padding: 15px 30px 15px 30px;
     gap: 10px;
     border-radius: 10px;
-    border: 1px solid #00BEE8;
+    border: 1px solid #1CE6B6;
     font-family: 'Poppins';
     font-size: 23px;
     font-weight: 400;
@@ -103,7 +103,11 @@
     cursor: pointer;
     display: none;
     &:hover {
-        background-color: #00BEE8;
+        background-color: #1CE6B6;
+    }
+    &:active {
+        background-color: white;
+        color: #1CE6B6;
     }
 }
 
@@ -126,6 +130,10 @@
     display: none;
     &:hover {
         background-color: #00BEE8;
+    }
+    &:active {
+        color: #00BEE8;
+        background-color: white;
     }
 }
 
