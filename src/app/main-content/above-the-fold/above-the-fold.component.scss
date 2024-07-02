@@ -36,14 +36,21 @@ header {
     left: -33px;
 }
 
-.i-am {
+.i-am, .i-am-german {
     font-family: 'Poppins';
-    font-size: 75px;
     font-weight: 400;
     line-height: 108px;
     text-align: center;
     color: white;
     margin: 0;
+}
+
+.i-am {
+    font-size: 75px;
+}
+
+.i-am-german {
+    font-size: 46px;
 }
 
 .name {
@@ -72,8 +79,7 @@ header {
     left: 0;
 }
 
-button {
-    width: 165px;
+button, .german-button-text {
     height: 58px;
     padding: 15px 30px 15px 30px;
     border-radius: 10px;
@@ -91,7 +97,6 @@ button {
     color: white;
     white-space: nowrap;
     position: absolute;
-    left: calc(50% - 82.5px);
     top: calc(50% + 100px);
     z-index: 5;
     &:hover {
@@ -102,6 +107,16 @@ button {
         color: black;
         background-color: white;
     }
+}
+
+button {
+    width: 165px;
+    left: calc(50% - 82.5px);
+}
+
+.german-button-text {
+    width: 230px;
+    left: calc(50% - 115px);
 }
 
 @keyframes move {
@@ -231,6 +246,10 @@ button {
     .i-am {
         font-size: 54px;
     }
+
+    .i-am-german {
+        font-size: 38px;
+    }
     
     .name {
         font-size: 82px;
@@ -281,6 +300,10 @@ button {
     .i-am {
         font-size: 44px;
     }
+
+    .i-am-german {
+        font-size: 30px;
+    }
     
     .name {
         font-size: 62px;
@@ -312,6 +335,10 @@ button {
     .i-am {
         font-size: 34px;
     }
+
+    .i-am-german {
+        font-size: 22px;
+    }
     
     .name {
         font-size: 44px;
@@ -329,10 +356,19 @@ button {
 @media(max-width:500px){
     button {
         width: 133px;
-        height: 58px;
+        height: 49px;
+        padding: 0;
         font-size: 16px;
-        text-align: left;
+        text-align: center;
         left: calc(50% - 67px);
+    }
+
+    .german-button-text {
+        width: 180px;
+        font-size: 16px;
+        text-align: center;
+        padding: 0;
+        left: calc(50% - 90px);
     }
 }
 
@@ -356,6 +392,10 @@ button {
     
     .i-am {
         font-size: 32px;
+    }
+
+    .i-am-german {
+        font-size: 20px;
     }
     
     .name {

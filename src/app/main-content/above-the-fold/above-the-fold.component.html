@@ -1,7 +1,12 @@
 <div class="above-the-fold-container" id="above-the-fold-container">
     <header>
         <div class="header-left">
-            <span class="i-am">I am</span>
+            @if(changeLanguage.englishLanguageActive){
+                <span class="i-am">{{ changeLanguage.iAmEnglish }}</span>
+            } @else {
+                <span class="i-am-german">{{ changeLanguage.iAmGerman }}</span>
+            }
+            
         </div>
         <div class="header-right">
             <span class="name">Gabor Hozleiter</span>
@@ -9,7 +14,12 @@
         </div>
     </header>
     <a href="#contact-cont">
-        <button>Let’s talk!</button>
+        @if(changeLanguage.englishLanguageActive){
+            <button>{{ changeLanguage.letsTalkEnglish }}</button>
+        }@else {
+            <button class="german-button-text">{{ changeLanguage.letsTalkGerman }}</button>
+        }
+        
     </a>
     <div class="anim-cont">
         <div class="srcoll-down-cont">
