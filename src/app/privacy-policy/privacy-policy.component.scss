@@ -1,5 +1,8 @@
 .policy-cont {
-    
+    width: 1920px;
+    position: relative;
+    display: flex;
+    justify-content: center;
     color: white;
     a {
         text-decoration: none;
@@ -7,6 +10,24 @@
     }
 }
 
+.policy-text {
+    max-width: 1720px;
+}
+
 @media(max-width:1920px){
-    
+    .policy-text {
+        max-width: calc(100vw - 200px);
+    }
+}
+
+@media(max-width:1000px){
+    .policy-text {
+        max-width: calc(100vw - 100px);
+    }
+}
+
+@media(max-width:400px){
+    .policy-text {
+        max-width: calc(100vw - 20px);
+    }
 }
