@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { TranslateService } from '../../translate.service';
 
 @Component({
   selector: 'app-about-me',
@@ -9,6 +10,8 @@ import { Component } from '@angular/core';
   styleUrl: './about-me.component.scss'
 })
 export class AboutMeComponent {
+
+  changeLanguage = inject(TranslateService);
 
     hoveredBulb: boolean = false;
     hoveredPuzzle:boolean = false;

@@ -10,9 +10,9 @@
 }
 
 .about-me-text-description {
-    width: 50%;
+    width: 55%;
     height: 100%;
-    gap:40px;
+    gap: 40px;
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
@@ -198,6 +198,16 @@ h1 {
     }
 }
 
+@media(max-width:900px){
+    h1 {
+        font-size: 70px;
+    }
+
+    .about-me-text-description {
+        gap : 35px;
+    }
+}
+
 @media(max-width: 800px){
     .shadow {
         width: 650px;
@@ -208,10 +218,6 @@ h1 {
 
     .about-me-text-description {
         margin-bottom: 800px;
-    }
-
-    h1 {
-        font-size: 80px;
     }
 
     .backgr-img {
