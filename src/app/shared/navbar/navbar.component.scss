@@ -20,17 +20,17 @@ a, span{
     color: white;
     text-decoration: none;
     white-space: nowrap;
+    cursor: pointer;
     &:hover {
         color: #00B2D9;
     }
 }
 
-a {
-    cursor: pointer;
-}
-
-span {
+.parting-line {
     cursor: default;
+    &:hover {
+        color:  white;
+    }
 }
 
 .logo {
@@ -38,6 +38,7 @@ span {
     font-size: 32px;
     font-weight: 700;
     color: white;
+    cursor: default;
 }
 
 .navbar-right {
