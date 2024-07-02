@@ -55,12 +55,16 @@
         </div>
         <div>
             <span class="skills-description">
-                I have gained experience in building projects with various frontend technologies and concepts.
+                @if(changeLanguage.englishLanguageActive){
+                    {{ changeLanguage.skillsDescriptionEnglish }}
+                }@else{
+                    {{ changeLanguage.skillsDescriptionGerman }}
+                }
             </span>
         </div>
         <div>
             <a href="#contact-cont">
-                <button class="get-in-btn">Get in touch</button>
+                <button class="get-in-btn"></button>
             </a>
         </div>
     </div>
