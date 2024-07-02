@@ -19,10 +19,15 @@ export class ContactformComponent {
 
   acceptedPolicy : boolean = false;
   warnTextPolicy : boolean = false;
+  messageSubmitted : boolean = false;
 
   onSubmit(ngForm: NgForm){
     if(ngForm.valid && ngForm.submitted && this.acceptedPolicy){
       console.log(this.contactData);
+      this.contactData.name = '';
+      this.contactData.email = '';
+      this.contactData.message = '';
+      this.acceptedPolicy = false;
     }
   }
 

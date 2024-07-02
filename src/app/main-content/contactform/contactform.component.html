@@ -49,8 +49,14 @@
         @if(!acceptedPolicy && warnTextPolicy){
             <span class="input-warn checkbox-warn-text">Please accept the privacy policy!</span>
         }
-        <div>
-            <input type="submit" value="" class="submit-button button-pos">
-        </div>
+        @if(!name.valid || !email.valid || !message.valid || !acceptedPolicy){
+            <div class="submit-button button-pos">
+            </div>
+        } @else {
+            <div>
+                <input type="submit" value="" class="submit-button-valid button-pos">
+            </div>
+        }
+        
     </form>
 </div>
