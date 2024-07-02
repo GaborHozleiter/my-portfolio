@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { TranslateService } from '../../translate.service';
 
 @Component({
   selector: 'app-navbar',
@@ -9,7 +10,22 @@ import { Component } from '@angular/core';
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
+
+  changeLanguage = inject(TranslateService);
+
   openedMenu: boolean = false;
+  germanLanguageActive: boolean = false;
+  englishLanguageActive: boolean = true;
+
+  german(){
+    this.germanLanguageActive = true;
+    this.englishLanguageActive = false;
+  }
+
+  english(){
+    this.germanLanguageActive = false;
+    this.englishLanguageActive = true;
+  }
 
   openMenu() {
     this.openedMenu = true;

@@ -7,9 +7,9 @@
         <a href="#skills-cont">Skills</a>
         <a href="#portfolio-cont">Portfolio</a>
         <div>
-            <a href="#">de</a>
+            <a href="#"(click)="german()" [ngStyle]="{'color' : germanLanguageActive ? '#00B2D9' : 'white'}">de</a>
             <span>|</span>
-            <a href="#">en</a>
+            <a href="#"(click)="english()" [ngStyle]="{'color' : englishLanguageActive ? '#00B2D9' : 'white'}">en</a>
         </div>
         <div class="menu-icon">
             @if(!openedMenu){
@@ -25,7 +25,7 @@
     <a href="#skills-cont" (click)="closeMenu()">Skills</a>
     <a href="#portfolio-cont" (click)="closeMenu()">Portfolio</a>
     <div>
-        <a href="#" (click)="closeMenu()">de</a>
+        <a href="#" (click)="closeMenu()" (click)="german()">de</a>
         <span>|</span>
         <a href="#" (click)="closeMenu()">en</a>
     </div>
