@@ -1,0 +1,28 @@
+.imprint-cont {
+    width: 1920px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.imprint-text-cont {
+    margin-left: 100px;
+    max-width: 1720px;
+}
+
+@media(max-width:1000px){
+    .imprint-text-cont {
+        margin-left: 50px;
+    }
+}
+
+@media(max-width:400px){
+    .imprint-text-cont {
+        margin-left: 10px;
+    }
+}
