@@ -162,13 +162,13 @@ a {
 }
 
 @media(max-width:677px){
-    .checkbox {
+    .checkbox, .checkbox-valid {
         bottom: 127px;
     }
 }
 
 @media(max-width:405px){
-    .checkbox {
+    .checkbox, .checkbox-valid {
         bottom: 146px;
     }
 }
