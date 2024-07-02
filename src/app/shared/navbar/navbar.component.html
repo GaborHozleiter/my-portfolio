@@ -3,7 +3,7 @@
         <span class="logo">Gabor</span>
     </div>
     <div class="navbar-right">
-        <a href="#about-me-cont">{{ xy }}</a>
+        <a href="#about-me-cont">{{ aboutMeText }}</a>
         <a href="#skills-cont">Skills</a>
         <a href="#portfolio-cont">Portfolio</a>
         <div>
@@ -21,7 +21,7 @@
     </div>
 </nav>
 <div class="menu" [ngClass]="{'menu-window-opened': openedMenu , 'menu-window-closed': !openedMenu}">
-    <a href="#about-me-cont" (click)="closeMenu()">{{ xy }}</a>
+    <a href="#about-me-cont" (click)="closeMenu()">{{ aboutMeText }}</a>
     <a href="#skills-cont" (click)="closeMenu()">Skills</a>
     <a href="#portfolio-cont" (click)="closeMenu()">Portfolio</a>
     <div>
