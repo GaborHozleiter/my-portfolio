@@ -3,7 +3,8 @@
         <div>
             <label for="name"></label>
             <input [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your name" required 
-            #name="ngModel"  class="name-inputfield name-pos">
+            #name="ngModel"  class="name-inputfield name-pos" 
+            [ngStyle]="{'border-color': !name.valid && name.touched ? 'red' : (!name.valid && !name.touched ? '#4B47FF' : 'green')}">
             @if(!name.valid && name.touched){
                 <div class="name-warn-pos">
                     <span class="input-warn">Your name is required!</span>
@@ -21,7 +22,8 @@
         <div>
             <label for="email"></label>
             <input [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="Your email" required
-                #email="ngModel" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" class="email-inputfield email-pos">
+                #email="ngModel" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" class="email-inputfield email-pos"
+                [ngStyle]="{'border-color': !email.valid && email.touched ? 'red' : (!email.valid && !email.touched ? '#4B47FF' : 'green')}">
                 @if(!email.valid && email.touched){
                     <div>
                         <span class="input-warn email-warn-pos">Your email is required!</span>
@@ -39,7 +41,8 @@
         <div>
             <label for="message"></label>
             <textarea [(ngModel)]="contactData.message" placeholder="Your message" id="message" name="message" required 
-            #message="ngModel" class="message-inputfield message-pos"></textarea>
+            #message="ngModel" class="message-inputfield message-pos"
+            [ngStyle]="{'border-color': !message.valid && message.touched ? 'red' : (!message.valid && !message.touched ? '#4B47FF' : 'green')}"></textarea>
             @if(!message.valid && message.touched){
                 <div>
                     <img src="../../../assets/img/invalid-icon.png" class="message-input-icon">
