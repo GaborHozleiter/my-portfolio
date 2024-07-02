@@ -1,6 +1,5 @@
 .policy-cont {
-    width: 1920px;
-    left: calc(50vw - 960px);
+    
     color: white;
     a {
         text-decoration: none;
@@ -9,8 +8,5 @@
 }
 
 @media(max-width:1920px){
-    .policy-cont {
-        width: 100vw;
-        max-width: 100%;
-    }
+    
 }
