@@ -99,13 +99,14 @@
     top: 415px;
 }
 
-.checkbox {
+.checkbox, .checkbox-valid {
     width: 18px;
     height: 18px;
     z-index: 9999;
     position: absolute;
     bottom: 108px;
     left: 0;
+    cursor: pointer;
 }
 
 .checkbox-text {
@@ -124,7 +125,6 @@
     position: absolute;
     bottom: 80px;
     left: 0;
-    display: none;
 }
 
 a {

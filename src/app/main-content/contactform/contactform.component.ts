@@ -1,10 +1,11 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-contactform',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, CommonModule],
   templateUrl: './contactform.component.html',
   styleUrl: './contactform.component.scss'
 })
@@ -16,10 +17,22 @@ export class ContactformComponent {
     message: ''
   }
 
+  acceptedPolicy : boolean = false;
+  warnTextPolicy : boolean = false;
+
   onSubmit(ngForm: NgForm){
-    if(ngForm.valid && ngForm.submitted){
+    if(ngForm.valid && ngForm.submitted && this.acceptedPolicy){
       console.log(this.contactData);
     }
-   
+  }
+
+  acceptPolicy(){
+    if(!this.acceptedPolicy){
+      this.acceptedPolicy = true;
+      this.warnTextPolicy = true;
+    }else {
+      this.acceptedPolicy = false;
+    }
+    
   }
 }
