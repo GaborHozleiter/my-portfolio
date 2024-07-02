@@ -166,6 +166,11 @@ button {
     gap: 32px;
     display: flex;
     z-index: 5;
+    img {
+        &:hover {
+            transform: scale(1.4);
+        }
+    }
 }
 
 .shadow-cont-left {
@@ -182,12 +187,6 @@ button {
 
 .shadow-left, .shadow-right {
     min-width: 1200px;
-}
-
-img {
-    &:hover {
-        transform: scale(1.4);
-    }
 }
 
 @media(max-width: 1920px){
