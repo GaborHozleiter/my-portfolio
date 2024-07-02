@@ -3,13 +3,13 @@
         <span class="logo">Gabor</span>
     </div>
     <div class="navbar-right">
-        <a href="#about-me-cont">About me</a>
+        <a href="#about-me-cont">{{ xy }}</a>
         <a href="#skills-cont">Skills</a>
         <a href="#portfolio-cont">Portfolio</a>
         <div>
-            <a href="#"(click)="german()" [ngStyle]="{'color' : germanLanguageActive ? '#00B2D9' : 'white'}">de</a>
+            <a href="#"(click)="german()" [ngStyle]="{'color' : changeLanguage.germanLanguageActive ? '#00B2D9' : 'white'}">de</a>
             <span>|</span>
-            <a href="#"(click)="english()" [ngStyle]="{'color' : englishLanguageActive ? '#00B2D9' : 'white'}">en</a>
+            <a href="#"(click)="english()" [ngStyle]="{'color' : changeLanguage.englishLanguageActive ? '#00B2D9' : 'white'}">en</a>
         </div>
         <div class="menu-icon">
             @if(!openedMenu){
@@ -21,7 +21,7 @@
     </div>
 </nav>
 <div class="menu" [ngClass]="{'menu-window-opened': openedMenu , 'menu-window-closed': !openedMenu}">
-    <a href="#about-me-cont" (click)="closeMenu()">About me</a>
+    <a href="#about-me-cont" (click)="closeMenu()">{{ xy }}</a>
     <a href="#skills-cont" (click)="closeMenu()">Skills</a>
     <a href="#portfolio-cont" (click)="closeMenu()">Portfolio</a>
     <div>

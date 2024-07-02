@@ -14,17 +14,18 @@ export class NavbarComponent {
   changeLanguage = inject(TranslateService);
 
   openedMenu: boolean = false;
-  germanLanguageActive: boolean = false;
-  englishLanguageActive: boolean = true;
+  xy : string = this.changeLanguage.aboutMeEnglish;
 
   german(){
-    this.germanLanguageActive = true;
-    this.englishLanguageActive = false;
+    this.changeLanguage.germanLanguageActive = true;
+    this.changeLanguage.englishLanguageActive = false;
+    this.xy = this.changeLanguage.aboutMeGerman;
   }
 
   english(){
-    this.germanLanguageActive = false;
-    this.englishLanguageActive = true;
+    this.changeLanguage.germanLanguageActive = false;
+    this.changeLanguage.englishLanguageActive = true;
+    this.xy = this.changeLanguage.aboutMeEnglish;
   }
 
   openMenu() {
