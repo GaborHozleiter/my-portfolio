@@ -23,6 +23,8 @@ export class TranslateService {
   skillsDescriptionGerman : string = 'Ich habe Erfahrung im Erstellen von Projekten mit verschiedenen Frontend-Technologien und -Konzepten gesammelt.';
   skillsButtonTextEnglish : string = 'Get in touch';
   skillsButtonTextGerman : string = 'Kontaktiere mich';
+  portfolioDescriptionEnglish : string = 'This page is a sample of my work! scroll down to view other projects I have develped.';
+  portfolioDescriptionGerman : string = 'Diese Seite ist ein Beispiel meiner Arbeit! Scrollen Sie nach unten, um weitere Projekte zu sehen, die ich entwickelt habe.';
 
   constructor() { }
 }

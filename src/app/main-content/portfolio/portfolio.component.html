@@ -8,9 +8,16 @@
             </div>
         </div>
         <div>
-            <span class="portfolio-header-description">This page is a sample of my work! scroll down to 
-                view other projects I have develped.
-            </span>
+            @if(changeLanguage.englishLanguageActive){
+                <span class="portfolio-header-description">
+                    {{ changeLanguage.portfolioDescriptionEnglish }}
+                </span>
+            }@else {
+                <span class="portfolio-header-description">
+                    {{ changeLanguage.portfolioDescriptionGerman }}
+                </span>
+            }
+            
         </div>
     </div>
 </div>

@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { PortfolioProjectComponent } from '../portfolio-project/portfolio-project.component';
+import { TranslateService } from '../../translate.service';
 
 
 @Component({
@@ -11,4 +12,5 @@ import { PortfolioProjectComponent } from '../portfolio-project/portfolio-projec
 })
 export class PortfolioComponent {
 
+  changeLanguage = inject(TranslateService);
 }
