@@ -33,7 +33,8 @@ export class TranslateService {
   contactSolverAskGerman : string = 'Brauchst du einen Frontend-Entwickler?';
   contactSolverContactEnglish : string = 'Contact me!';
   contactSolverContactGerman : string = 'Kontaktiere mich!';
-
+  contactHeaderTitleEnglish : string = 'Contact';
+  contactHeaderTitleGerman : string = 'Kontact';
 
   constructor() { }
 }

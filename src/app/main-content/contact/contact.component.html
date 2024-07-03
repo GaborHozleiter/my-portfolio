@@ -1,6 +1,10 @@
 <div class="contact-cont" id="contact-cont">
     <div class="contact-header">
-        <span>Contact</span>
+        @if(changeLanguage.englishLanguageActive){
+            <span>{{ changeLanguage.contactHeaderTitleEnglish }}</span>
+        }@else{
+            <span>{{ changeLanguage.contactHeaderTitleGerman }}</span>
+        }
     </div>
     <div class="contact-header-line"></div>
     <div class="problem-solver-line"></div>
