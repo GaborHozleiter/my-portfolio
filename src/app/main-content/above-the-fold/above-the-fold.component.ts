@@ -6,7 +6,7 @@ import { TranslateService } from '../../translate.service';
   standalone: true,
   imports: [],
   templateUrl: './above-the-fold.component.html',
-  styleUrl: './above-the-fold.component.scss'
+  styleUrls: ['./above-the-fold.component.scss', './above-the-fold-resp.component.scss']
 })
 export class AboveTheFoldComponent {
 

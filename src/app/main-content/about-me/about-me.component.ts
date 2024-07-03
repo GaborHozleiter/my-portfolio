@@ -7,7 +7,7 @@ import { TranslateService } from '../../translate.service';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './about-me.component.html',
-  styleUrl: './about-me.component.scss'
+  styleUrls: ['./about-me.component.scss' , './about-me-resp.component.scss',]
 })
 export class AboutMeComponent {
 

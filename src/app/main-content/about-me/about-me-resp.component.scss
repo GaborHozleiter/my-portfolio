@@ -1,0 +1,259 @@
+@import '../../../styles.scss';
+
+@media(max-width:1920px){
+    .about-me-cont{
+        width: 100vw;
+        max-width: 100%;
+        left: 0;
+    }
+
+    .shadow {
+        left:calc(100vw - 800px);
+        width: 750px;
+        height: 750px;
+        object-fit: cover;
+    }
+}
+
+@media(max-width:1500px){
+    .shadow {
+        left:calc(50vw - 375px);
+        margin-left: 250px;
+    }
+
+    .img-cont {
+        img {
+            margin-left: -100px;
+        }
+    }
+}
+
+@media(max-width:1300px){
+    @media(max-width:1500px){
+        .shadow {
+            margin-left: 180px;
+        }
+    }
+
+    .img-cont {
+        img {
+            margin-left: -140px;
+        }
+    }
+}
+
+@media(max-width:1150px){
+    @media(max-width:1500px){
+        .shadow {
+            margin-left: 0px;
+        }
+    }
+
+    .about-me-cont {
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column-reverse;
+        height: 1100px;
+    }
+
+    .img-cont {
+        position: absolute;
+        width: 100%;
+        position: relative;
+        img {
+            margin-left: 0;
+            position: absolute;
+            left: calc(50% - 296px);
+        }
+    }
+
+    .backgr-img {
+        height: 400px;
+        bottom: -850px;
+        margin-right: 300px;
+    }
+
+    .about-me-text-description {
+        width: 100%;
+        height: 300px;
+        margin-left: 0px;
+        margin-bottom: 750px;
+        position: absolute;
+        align-items: center;
+        bottom: -600px;
+        z-index: 11;
+        position: relative;
+    }
+
+    .about-me-text-cont {
+        height: 336px;
+        width: 60%;
+        gap: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media(max-width:1050px){
+    .about-me-cont {
+        height: 1200px;
+    }
+
+    .about-me-text-description {
+        margin-bottom: 850px;
+    }
+}
+
+@media(max-width:900px){
+    h1 {
+        font-size: 70px;
+    }
+
+    .about-me-text-description {
+        gap : 33px;
+    }
+}
+
+@media(max-width: 800px){
+    .shadow {
+        width: 650px;
+        height: 650px;
+        left:calc(50vw - 325px);
+        bottom: -660px;
+    }
+
+    .about-me-text-description {
+        margin-bottom: 800px;
+    }
+
+    .backgr-img {
+        height: 300px;
+        bottom: -800px;
+        margin-right: 300px;
+        margin-bottom: 25px;
+        width: 100vw;
+    }
+
+    .about-me-cont {
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column-reverse;
+        height: 1150px;
+    }
+
+    .img-cont {
+        img {
+            margin-left: 0;
+            position: absolute;
+            left: calc(50% - 296px);
+        }
+    }
+
+    .about-me-text-cont {
+        width: 70%;
+    }
+}
+
+@media(max-width: 650px){
+    .shadow {
+        width: 400px;
+        height: 400px;
+        left:calc(50vw - 200px);
+        bottom: -450px;
+    }
+
+    .about-me-text-description {
+        margin-bottom: 830px;
+    }
+
+    .about-me-text-cont {
+        width: 80%;
+    }
+
+    .backgr-img {
+        height: 200px;
+        bottom: -550px;
+        margin-right: -50px;
+    }
+
+    .about-me-cont {
+        height: 1000px;
+    }
+
+    .img-cont {
+        img {
+            width: 400px;
+            height: 400px;
+            margin-top: 130px;
+            left: calc(50% - 200px);
+        }
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+
+    .debut {
+        margin: 4px;
+    }
+}
+
+@media(max-width: 500px){
+    h1 {
+        font-size: 55px;
+        margin-block-end: 0;
+    }
+
+    .about-me-text-description {
+        margin-bottom: 880px;
+        gap: 20px;
+    }
+
+    .img-cont {
+        img {
+            margin-top: 180px;
+        }
+    }
+}
+
+@media(max-width: 450px){
+    .shadow {
+        width: 350px;
+        height: 350px;
+        left:calc(50vw - 175px);
+        bottom: -390px;
+    }
+}
+
+@media(max-width: 400px){
+    .about-me-cont {
+        height: 1105px;
+    }
+
+    .shadow {
+        width: 300px;
+        height: 300px;
+        left:calc(50vw - 150px);
+        bottom: -390px;
+    }
+
+    .img-cont {
+        img {
+            width: 300px;
+            height: 300px;
+            margin-top: 280px;
+            margin-left: 60px;
+        }
+    }
+
+    .about-me-text-description {
+        margin-bottom: 985px;
+        gap: 30px;
+    }
+}
+@media(max-width: 355px){
+    .about-me-cont {
+        margin-bottom: 250px;
+    }
+}
