@@ -35,6 +35,30 @@ export class TranslateService {
   contactSolverContactGerman : string = 'Kontaktiere mich!';
   contactHeaderTitleEnglish : string = 'Contact';
   contactHeaderTitleGerman : string = 'Kontact';
+  placeholderName : string = 'Your name';
+  placeholderEmail : string = 'Your email';
+  placeholderMessage : string = 'Your message';
+  placeholderNameEnglish : string = 'Your name';
+  placeholderNameGerman : string = 'Deine Name';
+  placeholderEmailEnglish : string = 'Your email';
+  placeholderEmailGerman : string = 'Dein Email';
+  placeholderMessageEnglish : string = 'Your message';
+  placeholderMessageGerman : string = 'Deine Nachricht';
+  inputNameWarningEnglish : string = 'Your name is required!';
+  inputNameWarningGerman : string = 'Dein Name wird benötigt!';
+  inputEmailWarningEnglish : string = 'Your email is required!';
+  inputEmailWarningGerman : string = 'Deine E-Mail wird benötigt!';
+  inputMessageWarningEnglish : string = 'Your message is empty!';
+  inputMessageWarningGerman : string = 'Deine Nachricht ist leer!';
+  acceptPolicyWarningEnglish : string = 'Please accept the privacy policy!';
+  acceptPolicyWarningGerman : string = 'Bitte akzeptiere die Datenschutzbestimmungen!';
+  acceptPolicyTextLeftEnglish : string = "I've read the";
+  acceptPolicyTextLeftGerman : string = 'Ich willige in die Datenverarbeitung gemäß der';
+  acceptPolicyTextRightEnglish : string = 'and agree to the processing of my data as outlined.';
+  acceptPolicyTextRightGerman : string = 'ein.';
+  privacyPolicyEnglish : string = 'privacy policy';
+  privacyPolicyGerman : string = 'Datenschutzerklärung';
+  
 
   constructor() { }
 }

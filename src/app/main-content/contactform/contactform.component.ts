@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
+import { TranslateService } from '../../translate.service';
 
 @Component({
   selector: 'app-contactform',
@@ -10,6 +11,8 @@ import { FormsModule, NgForm } from '@angular/forms';
   styleUrl: './contactform.component.scss'
 })
 export class ContactformComponent {
+
+  changeLanguage = inject(TranslateService);
 
   contactData = {
     name: '',
