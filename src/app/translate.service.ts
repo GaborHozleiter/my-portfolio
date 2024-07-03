@@ -21,7 +21,8 @@ export class TranslateService {
   aboutMeTextBottomGerman : string = 'Durch die Developer Akademie habe ich meine Frontend-Entwicklungsfähigkeiten ausgebaut und bin kompetent in der Software-Entwicklung. Ich freue mich darauf, mein Wissen in einem neuen Job einzusetzen und zu vertiefen.';
   skillsDescriptionEnglish : string = 'I have gained experience in building projects with various frontend technologies and concepts.';
   skillsDescriptionGerman : string = 'Ich habe Erfahrung im Erstellen von Projekten mit verschiedenen Frontend-Technologien und -Konzepten gesammelt.';
-  skillsButtonText : string = 'Get in touch';
+  skillsButtonTextEnglish : string = 'Get in touch';
+  skillsButtonTextGerman : string = 'Kontaktiere mich';
 
   constructor() { }
 }

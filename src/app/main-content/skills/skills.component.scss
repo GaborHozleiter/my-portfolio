@@ -64,7 +64,7 @@
 .skills-title-cont {
     display: flex;
     align-items: center;
-    gap: 42px;
+    gap: 50px;
 }
 
 .skills-title {
@@ -96,8 +96,7 @@
     color: white;
 }
 
-.get-in-btn {
-    width: 200px;
+.get-in-btn, .get-in-btn-german {
     height: 58px;
     padding: 15px 30px 15px 30px;
     border-radius: 10px;
@@ -121,6 +120,14 @@
         color: black;
         background-color: white;
     }
+}
+
+.get-in-btn {
+    width: 200px;
+}
+
+.get-in-btn-german {
+    width: 250px;
 }
 
 .icon-name {
@@ -161,12 +168,16 @@
         margin-left: 100px;
     }
 
-    .get-in-btn {
-        width: 200px;
-        height: 58px;
+    .get-in-btn, .get-in-btn-german {
         position: absolute;
         bottom: -100px;
         left: calc(50% - 100px);
+    }
+
+    .get-in-btn-german {
+        position: absolute;
+        bottom: -100px;
+        left: calc(50% - 125px);
     }
 }
 
@@ -223,6 +234,14 @@
         padding: 0;
     }
 
+    .get-in-btn-german {
+        width: 208px;
+        height: 49px;
+        font-size: 18px;
+        left: calc(50% - 104px);
+        padding: 0;
+    }
+
     .skill-icons-cont {
         margin: 0px;
         margin-top: 10px;
@@ -230,6 +249,10 @@
 
     .skills-title {
         font-size: 55px;
+    }
+
+    .skills-cont {
+        margin-top: 180px;
     }
 }
 

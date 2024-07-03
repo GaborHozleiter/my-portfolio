@@ -64,7 +64,11 @@
         </div>
         <div>
             <a href="#contact-cont">
-                <button class="get-in-btn"></button>
+                @if(changeLanguage.englishLanguageActive){
+                    <button class="get-in-btn">{{ changeLanguage.skillsButtonTextEnglish }}</button>
+                }@else{
+                    <button class="get-in-btn-german">{{ changeLanguage.skillsButtonTextGerman }}</button>
+                }
             </a>
         </div>
     </div>
