@@ -6,17 +6,46 @@
     <div class="problem-solver-line"></div>
     <div class="problem-solver-cont">
         <div>
-            <span class="problem-solver-title">Got a problem to solve?</span>
+            @if(changeLanguage.englishLanguageActive){
+                <span class="problem-solver-title">
+                    {{ changeLanguage.contactSolverTitleEnglish }}
+                </span>
+            }@else {
+                <span class="problem-solver-title">
+                    {{ changeLanguage.contactSolverTitleGerman }}
+                </span>
+            }
         </div>
         <div>
-            <span class="problem-solver-description">Contact me through this form,
-                I am interested in hearing from you, knowing your ideas
-                and contributing to your projects with my work.
-            </span>
+            @if(changeLanguage.englishLanguageActive){
+                <span class="problem-solver-description">
+                    {{ changeLanguage.contactSolverDescriptionEnglish }}
+                </span>
+            }@else {
+                <span class="problem-solver-description">
+                    {{ changeLanguage.contactSolverDescriptionGerman }}
+                </span>
+            }
         </div>
         <div>
-            <span class="problem-solver-ask">Need a Frontend developer?</span>
-            <span class="problem-solver-contact"> Contact me!</span>
+            @if(changeLanguage.englishLanguageActive){
+                <span class="problem-solver-ask">
+                    {{ changeLanguage.contactSolverAskEnglish }}
+                </span>
+            }@else {
+                <span class="problem-solver-ask">
+                    {{ changeLanguage.contactSolverAskGerman }}
+                </span>
+            }
+            @if(changeLanguage.englishLanguageActive){
+                <span class="problem-solver-contact">
+                    {{ changeLanguage.contactSolverContactEnglish }}
+                </span>
+            }@else {
+                <span class="problem-solver-contact">
+                    {{ changeLanguage.contactSolverContactGerman }}
+                </span>
+            }
         </div>
     </div>
     <div class="contact-form-cont">

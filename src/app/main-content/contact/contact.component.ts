@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { ContactformComponent } from '../contactform/contactform.component';
+import { TranslateService } from '../../translate.service';
 
 
 @Component({
@@ -11,4 +12,5 @@ import { ContactformComponent } from '../contactform/contactform.component';
 })
 export class ContactComponent {
 
+  changeLanguage = inject(TranslateService);
 }
