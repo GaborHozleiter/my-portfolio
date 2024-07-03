@@ -252,11 +252,15 @@
     }
 
     .skills-cont {
-        margin-top: 180px;
+        margin-top: 250px;
     }
 }
 
 @media(max-width:400px){
+    .skills-cont {
+        margin-top: 240px;
+    }
+
     .blue-line {
         margin-right: -10px;
     }
