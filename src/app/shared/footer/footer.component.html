@@ -19,7 +19,14 @@
         </div>
     </div>
     <div class="imprint-cont">
-        <a href="imprint"><span>Imprint</span></a>
+        <a href="imprint">
+            @if(changeLanguage.englishLanguageActive){
+                <span>{{ changeLanguage.imprintEnglish }}</span>
+            }@else {
+                <span>{{ changeLanguage.imprintGerman }}</span>
+            }
+            
+        </a>
     </div>
 </footer>
 

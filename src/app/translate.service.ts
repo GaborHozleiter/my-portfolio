@@ -60,6 +60,8 @@ export class TranslateService {
   privacyPolicyGerman : string = 'Datenschutzerklärung';
   sendMessageButtonEnglish : string = 'Send Message:)';
   sendMessageButtonGerman : string = 'Nachricht senden:)';
+  imprintEnglish : string = 'Imprint';
+  imprintGerman : string = 'Impressum';
 
   constructor() { }
 }
