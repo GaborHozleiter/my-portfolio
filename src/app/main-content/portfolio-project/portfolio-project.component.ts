@@ -20,7 +20,7 @@ export class PortfolioProjectComponent {
       descriptionEnglish : 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
       descriptionGerman : 'Task-Manager inspiriert vom Kanban-System. Aufgaben erstellen und organisieren per Drag-and-Drop, Nutzer und Kategorien zuweisen.',
       testLink : '#',
-      githubLink : '#',
+      githubLink : 'https://github.com/GaborHozleiter/Join',
       background : '../../../assets/img/Property 1=join photo.png',
       backgroundNotebook : '../../../assets/img/Join.png'
     },
@@ -30,7 +30,7 @@ export class PortfolioProjectComponent {
       descriptionEnglish : 'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
       descriptionGerman : 'Jump and Run Spiel auf objektorientierter Basis. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu kämpfen.',
       testLink : '#',
-      githubLink : '#',
+      githubLink : 'https://github.com/GaborHozleiter/El_Pollo_Loco',
       background : '../../../assets/img/pollo loco background.png',
       backgroundNotebook : '../../../assets/img/Pollo loco.png'
     }
