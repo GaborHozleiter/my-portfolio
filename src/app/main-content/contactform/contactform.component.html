@@ -100,12 +100,22 @@
             
         }
         @if(!name.valid || !email.valid || !message.valid || !acceptedPolicy){
-            <div class="submit-button button-pos">
-            </div>
+            <button class="submit-button button-pos">
+                @if(changeLanguage.englishLanguageActive){
+                    <span>{{ changeLanguage.sendMessageButtonEnglish }}</span>
+                }@else{
+                    <span>{{ changeLanguage.sendMessageButtonGerman }}</span>
+                }
+                
+            </button>
         } @else {
-            <div>
-                <input type="submit" value="" class="submit-button-valid button-pos">
-            </div>
+            <button class="submit-button-valid button-pos">
+                @if(changeLanguage.englishLanguageActive){
+                    <span>{{ changeLanguage.sendMessageButtonEnglish }}</span>
+                }@else{
+                    <span>{{ changeLanguage.sendMessageButtonGerman }}</span>
+                }
+            </button>
         }
         
     </form>

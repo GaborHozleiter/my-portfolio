@@ -141,11 +141,19 @@ a {
     border-radius: 10px;
     border: none;
     box-shadow: 4px 4px 4px 0px #00000040;
-    background-image: url('../../../assets/img/button-invalid.png');
+    background-color: #B6B6B6;
     position: absolute;
     bottom: 0;
     left: calc(50% - 126.5px);
     cursor: no-drop;
+    span {
+        font-family: 'Poppins';
+        font-size: 23px;
+        font-weight: 400;
+        line-height: 27.6px;
+        text-align: left;
+        color: white;
+    }
 }
 
 .submit-button-valid {
@@ -154,11 +162,19 @@ a {
     border-radius: 10px;
     border: none;
     box-shadow: 4px 4px 4px 0px #00000040;
-    background-image: url('../../../assets/img/button-valid.png');
+    background-color: #00BEE8;
     cursor: pointer;
     position: absolute;
     bottom: 0;
     left: calc(50% - 126.5px);
+    span {
+        font-family: 'Poppins';
+        font-size: 23px;
+        font-weight: 400;
+        line-height: 27.6px;
+        text-align: left;
+        color: white;
+    }
 }
 
 @media(max-width:677px){

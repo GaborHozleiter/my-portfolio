@@ -58,7 +58,8 @@ export class TranslateService {
   acceptPolicyTextRightGerman : string = 'ein.';
   privacyPolicyEnglish : string = 'privacy policy';
   privacyPolicyGerman : string = 'Datenschutzerklärung';
-  
+  sendMessageButtonEnglish : string = 'Send Message:)';
+  sendMessageButtonGerman : string = 'Nachricht senden:)';
 
   constructor() { }
 }
