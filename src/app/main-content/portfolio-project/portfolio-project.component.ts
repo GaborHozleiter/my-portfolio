@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { TranslateService } from '../../translate.service';
 
 @Component({
   selector: 'app-portfolio-project',
@@ -10,11 +11,14 @@ import { Component } from '@angular/core';
 })
 export class PortfolioProjectComponent {
 
+  changeLanguage = inject(TranslateService);
+
   projects = [
     {
       name :   'Join',
       skills : 'JavaScript | HTML | CSS | Firebase',
-      description : 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
+      descriptionEnglish : 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
+      descriptionGerman : 'Task-Manager inspiriert vom Kanban-System. Aufgaben erstellen und organisieren per Drag-and-Drop, Nutzer und Kategorien zuweisen.',
       testLink : '#',
       githubLink : '#',
       background : '../../../assets/img/Property 1=join photo.png',
@@ -23,7 +27,8 @@ export class PortfolioProjectComponent {
     {
       name :   'Pollo Loco',
       skills : 'JavaScript | HTML | CSS',
-      description : 'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
+      descriptionEnglish : 'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
+      descriptionGerman : 'Jump and Run Spiel auf objektorientierter Basis. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu kämpfen.',
       testLink : '#',
       githubLink : '#',
       background : '../../../assets/img/pollo loco background.png',

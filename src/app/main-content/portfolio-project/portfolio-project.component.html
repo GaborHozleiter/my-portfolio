@@ -7,7 +7,12 @@
     </div>
     <div class="white-block">
         <span class="project-name">{{ project.name }}</span>
-        <span class="project-description">{{ project.description }}</span>
+        @if(changeLanguage.englishLanguageActive){
+            <span class="project-description">{{ project.descriptionEnglish }}</span>
+        }@else{
+            <span class="project-description">{{ project.descriptionGerman }}</span>
+        }
+        
         <span class="project-skills">{{ project.skills }}</span>
     </div>
     <div class="buttons-cont">
