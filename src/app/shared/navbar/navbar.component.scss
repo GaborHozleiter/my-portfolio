@@ -1,7 +1,9 @@
+@import '../../../styles.scss';
+
 nav {
     width: 1920px;
     height: 109px;
-    background-color: #141d2f;
+    background-color: $backgrond;
     display: flex;
     justify-content: space-between;
     align-items: center;

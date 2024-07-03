@@ -1,6 +1,10 @@
+$backgrond : #141d2f;
+$blue : #00BEE8;
+$purple : #4B47FF;
+
 body {
     margin: 0;
-    background-color: #141d2f;
+    background-color: $backgrond;
     display: flex;
     justify-content: center;
 }

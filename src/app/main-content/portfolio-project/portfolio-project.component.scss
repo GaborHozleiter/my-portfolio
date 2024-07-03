@@ -1,9 +1,11 @@
+@import '../../../styles.scss';
+
 .portfolio-project {
     width: 603px;
     height: 603px;
     border-radius: 15px;
-    border: 1px solid #00BEE8;
-    background-color: #141d2f;
+    border: 1px solid $blue;
+    background-color: $backgrond;
     position: relative;
     &:hover {
         .project-img {
@@ -56,7 +58,7 @@
     font-weight: 700;
     line-height: 38.4px;
     text-align: center;
-    color: #4B47FF;
+    color: $purple;
 }
 
 .project-description {
@@ -74,7 +76,7 @@
     font-weight: 400;
     line-height: 27.6px;
     text-align: left;
-    color: #00BEE8;
+    color: $blue;
 }
 
 .buttons-cont {
@@ -126,13 +128,13 @@
     white-space: nowrap;
     color:white;
     cursor: pointer;
-    background-color: #4B47FF;
+    background-color: $purple;
     display: none;
     &:hover {
-        background-color: #00BEE8;
+        background-color: $blue;
     }
     &:active {
-        color: #00BEE8;
+        color: $blue;
         background-color: white;
     }
 }

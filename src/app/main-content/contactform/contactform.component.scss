@@ -1,3 +1,8 @@
+//$backgrond : #141d2f;
+//$blue : #00BEE8;
+//$purple : #4B47FF;
+@import '../../../styles.scss';
+
 .form-cont {
     position: relative;
     height: 600px;
@@ -7,9 +12,9 @@
 .name-inputfield, .email-inputfield, .message-inputfield {
     width: calc(100% - 100px);
     border-radius: 10px;
-    background-color: #141D2F;
+    background-color: $backgrond;
     gap: 10px;
-    border: 1px solid #4B47FF;
+    border: 1px solid $purple;
     font-family: 'Poppins';
     font-size: 16px;
     font-weight: 400;
@@ -128,7 +133,7 @@
 }
 
 a {
-    color: #4B47FF;
+    color: $purple;
     text-decoration: none;
     &:hover {
         text-decoration: underline;
@@ -162,7 +167,7 @@ a {
     border-radius: 10px;
     border: none;
     box-shadow: 4px 4px 4px 0px #00000040;
-    background-color: #00BEE8;
+    background-color: $blue;
     cursor: pointer;
     position: absolute;
     bottom: 0;

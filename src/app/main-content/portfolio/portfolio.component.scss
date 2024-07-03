@@ -1,9 +1,11 @@
+@import '../../../styles.scss';
+
 .portfolio-cont {
     width: 1920px;
     max-width: 100%;
     height: 400px;
     left: 0; 
-    background-color: #141d2f;
+    background-color: $backgrond;
     position: relative;
     display: flex;
     justify-content: center;
@@ -30,7 +32,7 @@
     position: absolute;
     left: 0;
     top: 50px;
-    border: 2px solid #00BEE8;
+    border: 2px solid $blue;
 }
 
 .portfolio-title {
@@ -44,7 +46,7 @@
     color:white;
     cursor: default;
     &:hover {
-        color: #00BEE8;
+        color: $blue;
     }
 }
 
