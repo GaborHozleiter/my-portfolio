@@ -11,6 +11,13 @@
     cursor: default;
 }
 
+.shadow-cont-left {
+    position: absolute;
+    bottom: calc(50% - 350px);
+    left: -350px;
+    z-index: 0;
+}
+
 .contact-header {
     position: absolute;
     width: 376px;
@@ -58,6 +65,7 @@
     justify-content: space-between;
     align-items: flex-start;
     flex-direction: column;
+    z-index: 2;
 }
 
 .problem-solver-title {

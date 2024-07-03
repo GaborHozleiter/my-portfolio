@@ -17,6 +17,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
+}
+
+.shadow-cont-right {
+    position: absolute;
+    bottom: calc(50% - 480px);
+    right: 100px;
+    z-index: -1;
+}
+
+.shadow-right {
+    transform: scale(0.78);
+    min-width: 800px;
+    min-height: 800px;
 }
 
 .icons-cont {
