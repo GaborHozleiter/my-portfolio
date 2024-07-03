@@ -183,8 +183,15 @@ a {
     }
 }
 
+@media(max-width:450px){
+    .checkbox-warn-text {
+        bottom: 70px;
+    }
+}
+
 @media(max-width:405px){
     .checkbox, .checkbox-valid {
         bottom: 146px;
     }
 }
+
