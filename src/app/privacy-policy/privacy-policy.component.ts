@@ -9,5 +9,5 @@ import { Component } from '@angular/core';
 })
 export class PrivacyPolicyComponent {
 
-  emailAdress : string = 'hozleitergabor@gmail.com';
+  emailAdress : string = 'developer@gabor-hozleiter.com';
 }
