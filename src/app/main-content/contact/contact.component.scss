@@ -11,6 +11,11 @@
     cursor: default;
 }
 
+#contact-cont {
+    position: absolute;
+    top: -100px;
+}
+
 .shadow-cont-left {
     position: absolute;
     bottom: calc(50% - 350px);
