@@ -34,7 +34,7 @@ export class TranslateService {
   contactSolverContactEnglish : string = 'Contact me!';
   contactSolverContactGerman : string = 'Kontaktiere mich!';
   contactHeaderTitleEnglish : string = 'Contact';
-  contactHeaderTitleGerman : string = 'Kontact';
+  contactHeaderTitleGerman : string = 'Kontakt';
   placeholderName : string = 'Your name';
   placeholderEmail : string = 'Your email';
   placeholderMessage : string = 'Your message';

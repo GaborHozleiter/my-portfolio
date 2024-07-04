@@ -52,11 +52,7 @@ export class ContactformComponent {
           this.http.post(this.post.endPoint, this.post.body(this.contactData))
             .subscribe({
               next: (response) => {
-                //console.log(this.contactData);
-                //this.contactData.name = '';
-                //this.contactData.email = '';
-                //this.contactData.message = '';
-                //this.acceptedPolicy = false;
+                this.acceptedPolicy = false;
                 ngForm.resetForm();
               },
               error: (error) => {
