@@ -14,7 +14,6 @@ import { HttpClient } from '@angular/common/http';
 export class ContactformComponent {
 
   changeLanguage = inject(TranslateService);
-  mailTest = true;
   acceptedPolicy : boolean = false;
   warnTextPolicy : boolean = false;
   messageSubmitted : boolean = false;
@@ -48,11 +47,10 @@ export class ContactformComponent {
   
 
       onSubmit(ngForm: NgForm) {
-        if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+        if (ngForm.submitted && ngForm.form.valid) {
           this.http.post(this.post.endPoint, this.post.body(this.contactData))
             .subscribe({
               next: (response) => {
-                this.acceptedPolicy = false;
                 ngForm.resetForm();
               },
               error: (error) => {
@@ -60,9 +58,6 @@ export class ContactformComponent {
               },
               complete: () => console.info('send post complete'),
             });
-        } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-    
-          ngForm.resetForm();
         }
       }
 }
