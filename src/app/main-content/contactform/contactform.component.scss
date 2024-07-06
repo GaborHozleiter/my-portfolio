@@ -259,3 +259,17 @@ a {
     }
 }
 
+@media(max-width:340px){
+    .checkbox-warn-text {
+        bottom: 55px;
+    }
+
+    .checkbox, .checkbox-valid {
+        bottom: 126px;
+    }
+
+    .checkbox-text {
+        bottom: 87px;
+    }
+}
+

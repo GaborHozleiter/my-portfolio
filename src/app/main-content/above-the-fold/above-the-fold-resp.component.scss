@@ -211,3 +211,40 @@
         width: calc(50% - 97px);
     }
 }
+
+@media(max-width: 350px){
+    header {
+        width: 320px;
+        height: 145px;
+        left: calc(50% - 130px);
+        top: calc(50% - 135px);
+    }
+    
+    .header-right {
+        width: 300px;
+        margin: 0;
+    }
+    
+    .header-left {
+        top: 36px;
+        left: -23px;
+        margin: 0;
+    
+    }
+    
+    .i-am {
+        font-size: 24px;
+    }
+
+    .i-am-german {
+        font-size: 16px;
+    }
+    
+    .name {
+        font-size: 33px;
+    }
+    
+    .profession {
+        font-size: 23px;
+    }
+}
