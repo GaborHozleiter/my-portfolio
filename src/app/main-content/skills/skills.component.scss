@@ -15,19 +15,6 @@
     overflow: hidden;
 }
 
-.shadow-cont-right {
-    position: absolute;
-    bottom: calc(50% - 480px);
-    right: 100px;
-    z-index: -1;
-}
-
-.shadow-right {
-    transform: scale(0.78);
-    min-width: 800px;
-    min-height: 800px;
-}
-
 .icons-cont {
     width: 700px;
     height: 700px;
@@ -236,7 +223,7 @@
     }
 
     .skills-cont {
-        padding-bottom: 60px;
+        padding-bottom: 100px;
     }
 }
 
@@ -287,5 +274,11 @@
 
     .skills-text-cont {
         width: calc(100% - 20px);
+    }
+}
+
+@media(max-width:350px){
+    .skills-cont {
+        padding-bottom: 140px;
     }
 }
