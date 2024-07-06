@@ -19,11 +19,11 @@
                 </p>
             }
         </div>
-        <div class="about-me-text-cont" (mouseover)="changeBulbImage()">
+        <div class="about-me-text-cont">
             @if(!hoveredBulb){
-                <img src="../../../assets/img/bulb.png" class="bulb">
+                <img src="../../../assets/img/bulb.png" class="bulb" (mouseover)="changeBulbImage()">
             } @else {
-                <img src="../../../assets/img/bulb hovered.png" class="bulb">
+                <img src="../../../assets/img/bulb hovered.png" class="bulb" (mouseover)="changeBulbImage()">
             }
             @if(changeLanguage.englishLanguageActive){
                 <p class="debut">
@@ -35,11 +35,11 @@
                 </p>
             }
         </div>
-        <div class="about-me-text-cont"  (mouseover)="changePuzzleImage()">
+        <div class="about-me-text-cont">
             @if(!hoveredPuzzle){
-                <img src="../../../assets/img/puzzle.png" class="puzzle">
+                <img src="../../../assets/img/puzzle.png" class="puzzle" (mouseover)="changePuzzleImage()">
             } @else {
-                <img src="../../../assets/img/puzzle hovered.png" class="puzzle">        
+                <img src="../../../assets/img/puzzle hovered.png" class="puzzle" (mouseover)="changePuzzleImage()">        
             }
             @if(changeLanguage.englishLanguageActive){
                 <p class="debut">
