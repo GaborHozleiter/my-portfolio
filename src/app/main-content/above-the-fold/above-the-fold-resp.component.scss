@@ -152,7 +152,7 @@
 @media(max-width:500px){
     button {
         width: 133px;
-        height: 49px;
+        height: 49px !important;
         padding: 0;
         font-size: 16px;
         text-align: center;
@@ -161,6 +161,7 @@
 
     .german-button-text {
         width: 180px;
+        height: 49px !important;
         font-size: 16px;
         text-align: center;
         padding: 0;

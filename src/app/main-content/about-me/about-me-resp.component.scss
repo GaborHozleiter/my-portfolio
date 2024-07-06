@@ -17,7 +17,7 @@
 
 @media(max-width:1500px){
     .shadow {
-        left:calc(50vw - 375px);
+        left:calc(50vw - 300px);
         margin-left: 250px;
     }
 
@@ -43,11 +43,10 @@
 }
 
 @media(max-width:1150px){
-    @media(max-width:1500px){
         .shadow {
             margin-left: 0px;
+            transform: translateX(-100px);
         }
-    }
 
     .about-me-cont {
         justify-content: flex-start;
@@ -121,6 +120,8 @@
         height: 650px;
         left:calc(50vw - 325px);
         bottom: -660px;
+        transform: translateX(-50px);
+
     }
 
     .about-me-text-description {
@@ -157,10 +158,11 @@
 
 @media(max-width: 650px){
     .shadow {
-        width: 400px;
-        height: 400px;
-        left:calc(50vw - 200px);
+        width: 500px;
+        height: 500px;
+        left:calc(50vw - 250px);
         bottom: -450px;
+        transform: translateX(-30px);
     }
 
     .about-me-text-description {
@@ -220,14 +222,19 @@
         position: absolute;
         bottom: -120px;
     }
+
+    .shadow {
+        width: 400px;
+        height: 400px;
+        left:calc(50vw - 200px);
+        bottom: -400px;
+        transform: translateX(-30px);
+    }
 }
 
 @media(max-width: 450px){
     .shadow {
-        width: 350px;
-        height: 350px;
-        left:calc(50vw - 175px);
-        bottom: -390px;
+        
     }
 }
 

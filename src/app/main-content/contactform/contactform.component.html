@@ -100,7 +100,7 @@
             
         }
         @if(!name.valid || !email.valid || !message.valid || !acceptedPolicy){
-            <button class="submit-button button-pos">
+            <button class="submit-button button-pos" [disabled]="!name.valid || !email.valid || !message.valid || !acceptedPolicy">
                 @if(changeLanguage.englishLanguageActive){
                     <span>{{ changeLanguage.sendMessageButtonEnglish }}</span>
                 }@else{
@@ -117,6 +117,14 @@
                 }
             </button>
         }
+        <button class="submit-button-send-message button-pos" [disabled]="!name.valid || !email.valid || !message.valid || !acceptedPolicy"
+        [ngStyle]="{'display': this.changeLanguage.massegeSent ? 'block' : 'none'}">
+            @if(changeLanguage.englishLanguageActive){
+                <span>{{ changeLanguage.MessageSentButtonEnglish }}</span>
+            }@else{
+                <span>{{ changeLanguage.MessageSentButtonGerman }}</span>
+            }
+        </button>
         
     </form>
 </div>

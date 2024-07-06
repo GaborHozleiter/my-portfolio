@@ -7,6 +7,8 @@ export class TranslateService {
 
   germanLanguageActive: boolean = false;
   englishLanguageActive: boolean = true;
+  massegeSent : boolean = false;
+
   aboutMeEnglish : string = 'About me';
   aboutMeGerman : string = 'Über mich';
   iAmEnglish : string = 'I am';
@@ -60,6 +62,8 @@ export class TranslateService {
   privacyPolicyGerman : string = 'Datenschutzerklärung';
   sendMessageButtonEnglish : string = 'Send Message:)';
   sendMessageButtonGerman : string = 'Nachricht senden:)';
+  MessageSentButtonEnglish : string = 'Message sent:)';
+  MessageSentButtonGerman : string = 'Nachricht gesendet:)';
   imprintEnglish : string = 'Imprint';
   imprintGerman : string = 'Impressum';
 

@@ -1,10 +1,11 @@
 import { Component, inject } from '@angular/core';
 import { TranslateService } from '../../translate.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss'
 })

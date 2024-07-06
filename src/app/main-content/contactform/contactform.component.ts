@@ -18,7 +18,7 @@ export class ContactformComponent {
   warnTextPolicy : boolean = false;
   messageSubmitted : boolean = false;
 
-  http = inject(HttpClient)
+  http = inject(HttpClient);
 
   contactData = {
     name: '',
@@ -51,6 +51,12 @@ export class ContactformComponent {
           this.http.post(this.post.endPoint, this.post.body(this.contactData))
             .subscribe({
               next: (response) => {
+                this.acceptedPolicy = false;
+                this.warnTextPolicy = false;
+                this.changeLanguage.massegeSent = true;
+                setTimeout(()=>{
+                  this.changeLanguage.massegeSent = false;
+                },2000);
                 ngForm.resetForm();
               },
               error: (error) => {
