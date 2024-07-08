@@ -1,10 +1,6 @@
 @import '../../../styles.scss';
 
 .contact-cont {
-    width: 1920px;
-    max-width: 100%;
-    position: absolute;
-    left: 0; 
     height: 960px;
     background-color: $backgrond;
     position: relative;
@@ -19,9 +15,12 @@
 
 .shadow-cont-left {
     position: absolute;
-    bottom: calc(50% - 350px);
-    left: -350px;
+    left: calc(50vw - 1160px);
+    min-width: 800px;
+    min-height: 800px;
+    bottom: 150px;
     z-index: 0;
+    transform: rotate(180deg);
 }
 
 .contact-header {
@@ -54,7 +53,7 @@
 
 .problem-solver-line {
     position: absolute;
-    width: 50px;
+    width: calc(50vw - 910px);
     height: 4px;
     top: 269px;
     left: 0;
@@ -63,7 +62,7 @@
 
 .problem-solver-cont {
     position: absolute;
-    left: 100px;
+    left: calc(50vw - 860px);
     top: 250px;
     width: 473px;
     height: 150px;
@@ -115,13 +114,13 @@
     width: 620px;
     height: 600px;
     top: 250px;
-    right: 100px;
+    left: calc(50vw + 240px);
     gap: 32px;
 }
 
 .go-up-btn-cont {
     position: absolute;
-    right: 120px;
+    left: calc(50vw + 810px);
     top: 880px;
     cursor: pointer;
     background-image: url('../../../assets/img/Go\ up\ button.png');
@@ -132,19 +131,33 @@
     }
 }
 
-.parting-line {
-    position: absolute;
-    top: 950px;
-    width: 100vw;
-    height: 4px;
-    background-color: $blue;
-}
-
 @media(max-width:1920px){
     .contact-cont {
         width: 100vw;
         max-width: 100%;
-        left: 0;
+        overflow-x: hidden;
+    }
+
+    .contact-form-cont {
+        left: calc(100vw - 720px);
+    }
+
+    .go-up-btn-cont {
+        position: absolute;
+        left: calc(100vw - 140px);
+    }
+
+    .problem-solver-cont {
+        position: absolute;
+        left: 100px;
+    }
+
+    .problem-solver-line {
+        width: 50px;
+    }
+
+    .shadow-cont-left {
+        left: calc(0vw - 190px);
     }
 }
 
@@ -165,10 +178,6 @@
 
     .go-up-btn-cont {
         top: 1080px;
-    }
-    
-    .parting-line {
-        top: 1150px;
     }
 }
 
@@ -212,10 +221,6 @@
         display: none;
     }
 
-    .parting-line {
-        top: 1100px;
-    }
-
     .contact-cont {
         height: 1110px;
     }
@@ -239,10 +244,6 @@
     .contact-cont {
         height: 1130px;
     }
-
-    .parting-line {
-        top: 1120px;
-    }
     
     .problem-solver-cont {
         height: 200px;
@@ -257,10 +258,6 @@
     .contact-cont {
         height: 1150px;
     }
-
-    .parting-line {
-        top: 1140px;
-    }
     
     .problem-solver-cont {
         height: 220px;
@@ -268,6 +265,22 @@
 
     .contact-form-cont {
         top: 490px;
+    }
+}
+
+@media(max-width:400px){
+
+    .problem-solver-cont {
+        position: absolute;
+        left: 20px;
+    }
+
+    .problem-solver-line {
+        width: 10px;
+    }
+
+    .contact-header-line {
+        width: calc(50% - 128px);
     }
 }
 
@@ -290,10 +303,6 @@
 
     .contact-cont {
         height: 1190px;
-    }
-
-    .parting-line {
-        top: 1180px;
     }
 
     .contact-form-cont {

@@ -1,5 +1,4 @@
 .policy-cont {
-    width: 1920px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -28,6 +27,6 @@
 
 @media(max-width:400px){
     .policy-text {
-        max-width: calc(100vw - 20px);
+        max-width: calc(100vw - 40px);
     }
 }

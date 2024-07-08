@@ -2,12 +2,20 @@
 
 footer {
     width: 1920px;
-    left: 0;
+    left: calc(50vw - 960px);
     height: 291px;
     background-color: $backgrond;
     position: relative;
     display: flex;
     align-items: center;
+}
+
+.parting-line {
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 4px;
+    background-color: $blue;
 }
 
 .footer-cont {
@@ -23,10 +31,14 @@ footer {
     font-size: 32px;
     font-weight: 700;
     color: white;
-    cursor: default;
+    cursor: pointer;
     &:hover {
         color: #00B2D9;
     }
+}
+
+a {
+    text-decoration: none;
 }
 
 .copyright-cont {

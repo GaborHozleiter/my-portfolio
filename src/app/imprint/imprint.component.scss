@@ -1,8 +1,11 @@
 .imprint-cont {
     width: 1920px;
+    left: calc(50vw - 960px);
+    height: calc(100vh - 400px);
     position: relative;
     display: flex;
     justify-content: flex-start;
+    align-items: flex-start;
     color: white;
     a {
         text-decoration: none;
@@ -15,6 +18,14 @@
     max-width: 1720px;
 }
 
+@media(max-width:1920px){
+    .imprint-cont {
+        width: 100vw;
+        max-width: 100%;
+        left: 0;
+    }
+}
+
 @media(max-width:1000px){
     .imprint-text-cont {
         margin-left: 50px;
@@ -23,6 +34,6 @@
 
 @media(max-width:400px){
     .imprint-text-cont {
-        margin-left: 10px;
+        margin-left: 20px;
     }
 }

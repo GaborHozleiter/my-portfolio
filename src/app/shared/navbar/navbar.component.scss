@@ -10,7 +10,7 @@ nav {
     position: sticky;
     top: 0;
     left: calc(50vw - 960px); 
-    z-index: 100;
+    z-index: 1001;
 }
 
 a, span{
@@ -40,7 +40,7 @@ a, span{
     font-size: 32px;
     font-weight: 700;
     color: white;
-    cursor: default;
+    cursor: pointer;
 }
 
 .navbar-right {
@@ -85,7 +85,7 @@ img {
 .menu-window-opened {
     animation: fadeIn 0.25s ease-in-out;
     opacity: 1;
-    z-index: 1000;
+    z-index: 1001;
 }
 
 .menu-window-closed {
@@ -137,12 +137,8 @@ img {
 }
 
 @media(max-width: 650px){
-    nav a, nav span {
-        display: none;
-    }
-
-    .logo {
-        display: block !important;
+    .navbar-right a, .language, .parting-line{
+        display: none
     }
 
     img {
@@ -156,10 +152,10 @@ img {
 
 @media(max-width: 400px){
     .navbar-right {
-        margin-right: 10px;
+        margin-right: 20px;
     }
     
     .navbar-left {
-        margin-left: 10px;
+        margin-left: 20px;
     }
 }
