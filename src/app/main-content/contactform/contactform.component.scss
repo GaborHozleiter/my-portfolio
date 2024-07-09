@@ -189,27 +189,6 @@ a {
     }
 }
 
-.submit-button-send-message {
-    width: 260px;
-    height: 58px;
-    border-radius: 10px;
-    border: none;
-    box-shadow: 4px 4px 4px 0px #00000040;
-    background-color: white;
-    cursor: none;
-    position: absolute;
-    bottom: 0;
-    left: calc(50% - 126.5px);
-    span {
-        font-family: 'Poppins';
-        font-size: 23px;
-        font-weight: 400;
-        line-height: 27.6px;
-        text-align: left;
-        color: $purple;
-    }
-}
-
 @media(max-width:677px){
     .checkbox, .checkbox-valid {
         bottom: 127px;
