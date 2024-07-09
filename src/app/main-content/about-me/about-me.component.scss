@@ -14,6 +14,10 @@
     bottom: 0px;
 }
 
+#about-me-cont {
+    transform: translateY(-109px);
+}
+
 .about-me-text-description {
     position: absolute;
     padding-left: 100px;
@@ -47,7 +51,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 11;
+    z-index: 1007;
     cursor: default;
 }
 
@@ -71,12 +75,12 @@ h1 {
 .img-cont {
     position: absolute;
     width: 960px;
-    left: 50vw;
+    left: 49vw;
     height: 100%;
     display: flex;
     justify-content: center;
     img {
-        object-fit: cover;
+        object-fit: contain;
         z-index: 10;
         position: relative;
     }
@@ -86,7 +90,15 @@ h1 {
     width: 100%;
     height: 400px;
     position: absolute;
-    top: 560px;
+    top: calc(451px + 100vh);
     left: 0;
     z-index: 1004;
+}
+
+.shadow-cont {
+    position: absolute;
+    z-index: 0;
+    top: -100px;
+    left: 50vw;
+    object-fit: cover;
 }

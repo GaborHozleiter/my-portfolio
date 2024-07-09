@@ -5,8 +5,13 @@
         width: 100vw;
         max-width: 100%;
         left: 0;
+        overflow: hidden;
     }
 
+    .shadow-cont-left {
+        left: -340px;
+    }
+    
     .srcoll-down-cont {
         left: calc(100vw - 210px);
     }
@@ -18,6 +23,10 @@
     .blue-line {
         left: 0;
         width: 50px;
+    }
+
+    .icons-cont{
+        left: 100px;
     }
 }
 

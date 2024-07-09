@@ -10,7 +10,7 @@ nav {
     position: sticky;
     top: 0;
     left: calc(50vw - 960px); 
-    z-index: 1004;
+    z-index: 1007;
 }
 
 a, span{
@@ -28,7 +28,7 @@ a, span{
     }
 }
 
-.parting-line {
+.parting-line, .parting-line-opened {
     cursor: default;
     &:hover {
         color:  white;
@@ -85,7 +85,7 @@ img {
 .menu-window-opened {
     animation: fadeIn 0.25s ease-in-out;
     opacity: 1;
-    z-index: 1001;
+    z-index: 1006;
 }
 
 .menu-window-closed {

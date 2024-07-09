@@ -1,17 +1,14 @@
 @import '../../../styles.scss';
 
 .above-the-fold-container {
-    width: 1920px;
     height: calc(100vh - 109px);
-    position: absolute;
     position: relative;
-    left: calc(50% - 960px);
-    overflow: hidden;
-}
-
-#about-me-cont {
-    position: absolute;
-    bottom: 109px;
+    left: 0;
+    //overflow: hidden;
+    background-image: url('../../../assets/img/shadow_mix.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 50%;
 }
 
 header {
@@ -80,12 +77,18 @@ header {
     font-weight: 400;
     line-height: 76.8px;
     text-align: left;
-    color: $purple;
     position: absolute;
     bottom: 0;
     left: 0;
 }
 
+.blue {
+    color: $blue;
+}
+
+.purple {
+    color: $purple;
+}
 button, .german-button-text {
     height: 58px;
     padding: 15px 30px 15px 30px;
@@ -105,7 +108,7 @@ button, .german-button-text {
     white-space: nowrap;
     position: absolute;
     top: calc(50% + 100px);
-    z-index: 5;
+    z-index: 1005;
     &:hover {
         transform: scaleX(1.1) scaleY(1.1);
         background-color: $purple;
@@ -175,8 +178,8 @@ button {
 .blue-line {
     height: 4px;
     position: absolute;
-    width: 3000px;
-    left: calc(50% - 2820px);
+    left: 0;
+    right: calc(50vw + 910px);
     bottom: 50px;
     background-color: $blue;
 }
@@ -184,29 +187,13 @@ button {
 .icons-cont{
     position: absolute;
     bottom: 30px;
-    left: 95px;
+    left: calc(50vw - 860px);
     gap: 32px;
     display: flex;
-    z-index: 5;
+    z-index: 1006;
     img {
         &:hover {
             transform: scale(1.4);
         }
     }
-}
-
-.shadow-cont-left {
-    position: absolute;
-    bottom: calc(50% - 350px);
-    left: -500px;
-}
-
-.shadow-cont-right {
-    position: absolute;
-    bottom: calc(50% - 350px);
-    right: -500px;
-}
-
-.shadow-left, .shadow-right {
-    min-width: 1200px;
 }

@@ -1,13 +1,23 @@
 <div class="imprint-cont">
     <div class="imprint-text-cont">
+        @if(changeLanguage.englishLanguageActive){
+        <h1>Imprint</h1>
+        <p>Gabor Hozleiter<br />
+            Lohnder Stra&szlig;e 22a<br />
+            30926 Seelze, Germany</p>
+        <h2>Contact</h2>
+        <p>Phone: +49 5137 1472 040<br />
+            Email: {{ emailAdress }}</p>
+        <p>Source: <a href="https://www.e-recht24.de">e-recht24.de</a></p>
+        } @else {
         <h1>Impressum</h1>
         <p>Gabor Hozleiter<br />
-        Lohnder Stra&szlig;e 22a<br />
-        30926 Seelze</p>
+            Lohnder Stra&szlig;e 22a<br />
+            30926 Seelze</p>
         <h2>Kontakt</h2>
         <p>Telefon: +49 5137 1472 040<br />
-        E-Mail: {{ emailAdress }}</p>
+            E-Mail: {{ emailAdress }}</p>
         <p>Quelle: <a href="https://www.e-recht24.de">e-recht24.de</a></p>
+        }
     </div>
 </div>
-
