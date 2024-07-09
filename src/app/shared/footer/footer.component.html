@@ -1,6 +1,6 @@
-<div class="parting-line">
+<div class="parting-line" [ngStyle]="{'filter': this.changeLanguage.massegeSent ? 'blur(5px)' : 'none'}">
 </div>
-<footer>
+<footer [ngStyle]="{'filter': this.changeLanguage.massegeSent ? 'blur(5px)' : 'none'}">
     <div class="footer-cont">
         <div>
             <a href="#above-the-fold-container">
@@ -17,7 +17,7 @@
             <a href="#contact-cont">
                 <img src="../../../assets/img/Email button.png" class="ref-icon" alt="">
             </a>
-            <a href="https://de.linkedin.com/">
+            <a href="https://de.linkedin.com/" target="_blank">
                 <img src="../../../assets/img/Linkedin button.png" class="ref-icon" alt="">
             </a>
         </div>

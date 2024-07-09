@@ -1,24 +1,26 @@
 <nav [ngStyle]="{'filter': this.changeLanguage.massegeSent ? 'blur(5px)' : 'none'}">
-    <div class="navbar-left">
-        <a href="#above-the-fold-container">
-            <span class="logo">Gabor</span>
-        </a>
-    </div>
-    <div class="navbar-right">
-        <a href="#about-me-cont">{{ aboutMeText }}</a>
-        <a href="#skills-cont">Skills</a>
-        <a href="#portfolio-cont">Portfolio</a>
-        <div>
-            <span class="language" (click)="closeMenu()" (click)="german()" [ngStyle]="{'color' : changeLanguage.germanLanguageActive ? '#00B2D9' : 'white'}">de</span>
-            <span class="parting-line">|</span>
-            <span class="language" (click)="closeMenu()" (click)="english()" [ngStyle]="{'color' : changeLanguage.englishLanguageActive ? '#00B2D9' : 'white'}">en</span>
+    <div class="nav-resp">
+        <div class="navbar-left">
+            <a href="#above-the-fold-container">
+                <span class="logo">Gabor</span>
+            </a>
         </div>
-        <div class="menu-icon">
-            @if(!openedMenu){
-            <img class="burger-menu-icon" src="../../assets/img/menu-icon.png" (click)="openMenu()">
-            }@else {
-            <img class="burger-menu-icon" src="../../assets/img/close-icon.png" (click)="closeMenu()">
-            }
+        <div class="navbar-right">
+            <a href="#about-me-cont">{{ aboutMeText }}</a>
+            <a href="#skills-cont">Skills</a>
+            <a href="#portfolio-cont">Portfolio</a>
+            <div>
+                <span class="language" (click)="closeMenu()" (click)="german()" [ngStyle]="{'color' : changeLanguage.germanLanguageActive ? '#00B2D9' : 'white'}">de</span>
+                <span class="parting-line">|</span>
+                <span class="language" (click)="closeMenu()" (click)="english()" [ngStyle]="{'color' : changeLanguage.englishLanguageActive ? '#00B2D9' : 'white'}">en</span>
+            </div>
+            <div class="menu-icon">
+                @if(!openedMenu){
+                <img class="burger-menu-icon" src="../../assets/img/menu-icon.png" (click)="openMenu()">
+                }@else {
+                <img class="burger-menu-icon" src="../../assets/img/close-icon.png" (click)="closeMenu()">
+                }
+            </div>
         </div>
     </div>
 </nav>
