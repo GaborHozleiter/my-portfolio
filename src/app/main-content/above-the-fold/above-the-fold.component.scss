@@ -4,7 +4,6 @@
     height: calc(100vh - 109px);
     position: relative;
     left: 0;
-    //overflow: hidden;
     background-image: url('../../../assets/img/shadow_mix.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -71,24 +70,34 @@ header {
     white-space: nowrap;
 }
 
+@keyframes changeColor {
+    0%{
+        color: $purple;
+        
+    } 
+
+    50% {
+        color: $blue;
+    }
+
+    100% {
+        color: $purple;
+    }
+}
+
 .profession {
     font-family: 'Poppins';
     font-size: 66px;
     font-weight: 400;
     line-height: 76.8px;
     text-align: left;
+    color: $purple;
     position: absolute;
     bottom: 0;
     left: 0;
+    animation: changeColor 2s infinite;
 }
 
-.blue {
-    color: $blue;
-}
-
-.purple {
-    color: $purple;
-}
 button, .german-button-text {
     height: 58px;
     padding: 15px 30px 15px 30px;

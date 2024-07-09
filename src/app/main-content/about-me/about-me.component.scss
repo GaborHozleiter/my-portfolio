@@ -6,7 +6,6 @@
     left: 0; 
     position: relative;
     display: flex;
-    z-index: 1003;
 }
 
 #skills-cont {
@@ -51,7 +50,6 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1007;
     cursor: default;
 }
 
@@ -91,7 +89,7 @@ h1 {
     height: 400px;
     position: absolute;
     top: calc(451px + 100vh);
-    left: 0;
+    left: 2;
     z-index: 1004;
 }
 

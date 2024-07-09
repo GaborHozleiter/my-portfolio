@@ -31,6 +31,10 @@
 }
 
 @media(max-width: 1050px){
+    .above-the-fold-container {
+        background-image: url('../../../assets/img/shadow_mix2.png');
+    }
+
     header {
         width: 730px;
         height: 180px;
