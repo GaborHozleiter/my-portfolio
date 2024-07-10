@@ -2,12 +2,13 @@ import { Component, HostListener, inject, OnInit } from '@angular/core';
 import { ContactformComponent } from '../contactform/contactform.component';
 import { TranslateService } from '../../translate.service';
 import { CommonModule } from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [ContactformComponent, CommonModule],
+  imports: [ContactformComponent, CommonModule, RouterLink],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })

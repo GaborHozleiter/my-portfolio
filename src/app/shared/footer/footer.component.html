@@ -3,7 +3,7 @@
 <footer [ngStyle]="{'filter': this.changeLanguage.massegeSent ? 'blur(5px)' : 'none'}">
     <div class="footer-cont">
         <div>
-            <a href="#above-the-fold-container">
+            <a routerLink="above-the-fold-container">
                 <span class="name">Gabor</span>
             </a>
         </div>
@@ -23,7 +23,7 @@
         </div>
     </div>
     <div class="imprint-cont">
-        <a href="imprint">
+        <a routerLink="imprint">
             @if(changeLanguage.englishLanguageActive){
                 <span>{{ changeLanguage.imprintEnglish }}</span>
             }@else {
