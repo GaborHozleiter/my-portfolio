@@ -10,6 +10,43 @@
     background-position: center 50%;
 }
 
+#above-the-fold-container {
+    top:-109px;
+}
+
+.animation-cont {
+    opacity: 0;
+    transform: translateY(-200px); 
+    transition: opacity 0.3s ease-in-out, transform 0.9s ease-in-out; 
+}
+  
+.animation-cont.in-view {
+    opacity: 1;
+    transform: translateX(0); 
+}
+
+.animation-cont-left {
+    opacity: 0;
+    transform: translateX(-200px); 
+    transition: opacity 0.3s ease-in-out, transform 0.9s ease-in-out; 
+  }
+  
+.animation-cont-left.in-view {
+    opacity: 1;
+    transform: translateX(0); 
+}
+
+.animation-cont-bottom {
+    opacity: 0;
+    transform: translateY(-200px); 
+    transition: opacity 0.3s ease-in-out, transform 0.9s ease-in-out; 
+  }
+  
+.animation-cont-bottom.in-view {
+    opacity: 1;
+    transform: translateX(0); 
+}
+
 header {
     width: 930px;
     height: 200px;

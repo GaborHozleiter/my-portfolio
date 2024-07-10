@@ -26,7 +26,7 @@ export class TranslateService {
   skillsButtonTextEnglish : string = 'Get in touch';
   skillsButtonTextGerman : string = 'Kontaktiere mich';
   portfolioDescriptionEnglish : string = 'This page is a sample of my work! scroll down to view other projects I have develped.';
-  portfolioDescriptionGerman : string = 'Diese Seite ist ein Beispiel meiner Arbeit! Scrollen Sie nach unten, um weitere Projekte zu sehen, die ich entwickelt habe.';
+  portfolioDescriptionGerman : string = 'Diese Seite ist ein Beispiel meiner Arbeit! Scrollen Sie nach unten, um weitere Projekte zu sehen.';
   contactSolverTitleEnglish : string = 'Got a problem to solve?';
   contactSolverTitleGerman : string = 'Ein Problem zu lösen?';
   contactSolverDescriptionEnglish : string = 'Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.';

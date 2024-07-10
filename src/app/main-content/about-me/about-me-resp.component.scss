@@ -41,7 +41,7 @@
     }
 
     #about-me-cont {
-        transform: translateY(520px);
+        transform: translateY(635px);
     }
 
     .shadow-cont {
@@ -111,12 +111,12 @@
 
     .shadow-cont {
         top: -70px;
-        transform: scale(1.15) rotate(15deg);
+        transform: scale(1.0) rotate(15deg);
         left: calc(50vw - 340px);
     }
 
     #about-me-cont {
-        transform: translateY(410px);
+        transform: translateY(510px);
     }
 
     .img-cont {
@@ -139,7 +139,7 @@
 @media(max-width:750px){
     .shadow-cont {
         top: -30px;
-        transform: scale(1.25) rotate(15deg);
+        transform: scale(1.05) rotate(15deg);
         left: calc(50vw - 270px);
     }
 
@@ -164,7 +164,7 @@
     }
 
     #about-me-cont {
-        transform: translateY(360px);
+        transform: translateY(460px);
     }
 
     .backgr-img {
@@ -223,7 +223,7 @@
     }
 
     #about-me-cont {
-        transform: translateY(220px);
+        transform: translateY(320px);
     }
 
     .backgr-img {

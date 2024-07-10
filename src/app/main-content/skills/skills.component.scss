@@ -195,11 +195,11 @@
     }
 
     .skills-cont {
-        padding-bottom: 250px;
+        padding-bottom: 280px;
     }
 
     .get-in-btn {
-        left: calc(50vw - 100px);
+        left: calc(50vw - 100px); 
         bottom: -60px;
     }
 
@@ -219,10 +219,6 @@
 
     .icons-cont {
         transform: translateX(-100px);
-    }
-
-    .skills-cont {
-        padding-bottom: 250px;
     }
 }
 
@@ -261,7 +257,7 @@
     }
 
     .skills-cont {
-        padding-bottom: 325px;
+        padding-bottom: 375px;
     }
 
     .get-in-btn {
@@ -290,10 +286,6 @@
 }
 
 @media(max-width:600px){
-    .skills-cont {
-        padding-bottom: 375px;
-    }
-
     .skills-text-cont {
         width: calc(100vw - 100px);
         left: 50px;

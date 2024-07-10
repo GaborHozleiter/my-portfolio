@@ -15,15 +15,14 @@
 
 .animation-cont {
     opacity: 0;
-    transform: translateY(-200px); 
+    transform: translateX(-200px); 
     transition: opacity 0.3s ease-in-out, transform 0.9s ease-in-out; 
 }
   
 .animation-cont.in-view {
     opacity: 1;
-    transform: translateY(0); 
+    transform: translateX(0); 
 }
-
 
 #portfolio-cont {
     position: absolute;
@@ -121,6 +120,10 @@
     .portfolio-header-line {
        top: 150px;
     }
+
+    #portfolio-cont {
+        top: -30px;
+    }
 }
 
 @media(max-width:1200px){
@@ -144,6 +147,10 @@
 
     .portfolio-header-line {
         top: 225px;
+    }
+
+    #portfolio-cont {
+        top: 60px;
     }
 }
 
