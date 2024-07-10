@@ -1,7 +1,7 @@
 <div  id="about-me-cont"></div>
-<div class="about-me-cont xy">
+<div class="about-me-cont ">
     <div class="about-me-text-description">
-        <div>
+        <div class="animation-cont">
             @if(changeLanguage.englishLanguageActive){
                 <h1>{{ changeLanguage.aboutMeEnglish }}</h1>
             } @else {
@@ -9,7 +9,7 @@
             }
             
         </div>
-        <div class="about-me-text-cont">
+        <div class="about-me-text-cont animation-cont">
             @if(changeLanguage.englishLanguageActive){
                 <p class="debut">
                     {{ changeLanguage.aboutMeTextTopEnglish }}
@@ -27,11 +27,11 @@
                 <img src="../../../assets/img/bulb hovered.png" class="bulb" (mouseover)="changeBulbImage()">
             }
             @if(changeLanguage.englishLanguageActive){
-                <p class="debut">
+                <p class="debut animation-cont">
                     {{ changeLanguage.aboutMeTextCenterEnglish }}
                 </p>
             } @else {
-                <p class="debut">
+                <p class="debut animation-cont">
                     {{ changeLanguage.aboutMeTextCenterGerman }}
                 </p>
             }
@@ -43,11 +43,11 @@
                 <img src="../../../assets/img/puzzle hovered.png" class="puzzle" (mouseover)="changePuzzleImage()">        
             }
             @if(changeLanguage.englishLanguageActive){
-                <p class="debut">
+                <p class="debut animation-cont">
                     {{ changeLanguage.aboutMeTextBottomEnglish }}
                 </p>
             } @else {
-                <p class="debut">
+                <p class="debut animation-cont">
                     {{ changeLanguage.aboutMeTextBottomGerman }}
                 </p>
             }
@@ -62,6 +62,6 @@
     <div id="skills-cont"></div>
 </div>
 <div>
-    <img class="backgr-img xy" src="../../../assets/img/Vector (2).png">
+    <img class="backgr-img " src="../../../assets/img/Vector (2).png">
 </div>
 

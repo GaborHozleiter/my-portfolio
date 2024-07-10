@@ -22,12 +22,21 @@ export class SkillsComponent implements OnInit {
   }
 
   private checkScroll(): void {
-    const elements = document.querySelectorAll('.xy');
+    const elements = document.querySelectorAll('.animation-cont');
+    const elementsLeft = document.querySelectorAll('.animation-cont-left');
     const windowHeight = window.innerHeight;
 
     elements.forEach(element => {
       const rect = element.getBoundingClientRect();
-      if (rect.top <= windowHeight * 0.6) {
+      if (rect.top <= windowHeight * 0.85) {
+        (element as HTMLElement).classList.add('in-view');
+      } else {
+        (element as HTMLElement).classList.remove('in-view');
+      }
+    });
+    elementsLeft.forEach(element => {
+      const rect = element.getBoundingClientRect();
+      if (rect.top <= windowHeight * 0.85) {
         (element as HTMLElement).classList.add('in-view');
       } else {
         (element as HTMLElement).classList.remove('in-view');

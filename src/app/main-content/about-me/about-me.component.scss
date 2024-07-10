@@ -9,16 +9,16 @@
    
 }
 
-.xy {
+.animation-cont {
     opacity: 0;
-    transform: translateY(100px); /* Element leicht nach unten verschoben */
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Übergang für sowohl opacity als auch transform */
+    transform: translateY(200px); 
+    transition: opacity 0.3s ease-in-out, transform 0.9s ease-in-out; 
   }
   
-  .xy.in-view {
+.animation-cont.in-view {
     opacity: 1;
-    transform: translateY(0); /* Element an seine ursprüngliche Position verschoben */
-  }
+    transform: translateY(0); 
+}
 
 #skills-cont {
     position: absolute;
