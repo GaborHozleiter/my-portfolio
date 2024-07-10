@@ -10,6 +10,11 @@
     background-position: center 50%;
 }
 
+#above-the-fold-container{
+    position: absolute;
+    top: -109px;
+}
+
 .animation-cont {
     opacity: 0;
     transform: translateY(-200px); 
@@ -18,7 +23,7 @@
   
 .animation-cont.in-view {
     opacity: 1;
-    transform: translateX(0); 
+    transform: translateX(0);  
 }
 
 .animation-cont-left {
