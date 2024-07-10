@@ -6,8 +6,19 @@
     left: 0; 
     position: relative;
     display: flex;
-    overflow: hidden;
+   
 }
+
+.xy {
+    opacity: 0;
+    transform: translateY(100px); /* Element leicht nach unten verschoben */
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Übergang für sowohl opacity als auch transform */
+  }
+  
+  .xy.in-view {
+    opacity: 1;
+    transform: translateY(0); /* Element an seine ursprüngliche Position verschoben */
+  }
 
 #skills-cont {
     position: absolute;
@@ -15,7 +26,8 @@
 }
 
 #about-me-cont {
-    transform: translateY(-109px);
+    position: absolute;
+    bottom: 100px;
 }
 
 .about-me-text-description {

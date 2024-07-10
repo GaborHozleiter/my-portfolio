@@ -9,6 +9,17 @@
     z-index: 1005;
 }
 
+.xy {
+    opacity: 0;
+    transform: translateY(100px); /* Element leicht nach unten verschoben */
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Übergang für sowohl opacity als auch transform */
+  }
+  
+  .xy.in-view {
+    opacity: 1;
+    transform: translateY(0); /* Element an seine ursprüngliche Position verschoben */
+  }
+
 .icons-cont {
     position: absolute;
     left: calc(50vw - 960px);
