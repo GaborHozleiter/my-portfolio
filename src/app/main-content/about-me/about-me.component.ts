@@ -31,7 +31,7 @@ export class AboutMeComponent implements OnInit{
   
       elements.forEach(element => {
         const rect = element.getBoundingClientRect();
-        if (rect.top <= windowHeight * 0.4) {
+        if (rect.top <= windowHeight * 0.7) {
           (element as HTMLElement).classList.add('in-view');
         } else {
           (element as HTMLElement).classList.remove('in-view');

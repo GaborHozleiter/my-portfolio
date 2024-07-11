@@ -9,3 +9,4 @@ export const routes: Routes = [
     {path : 'privacy-policy' , component : PrivacyPolicyComponent},
     {path : 'above-the-fold-container', redirectTo: ''},
 ];
+
