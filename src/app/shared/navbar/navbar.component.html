@@ -1,4 +1,4 @@
-<nav [ngStyle]="{'filter': this.changeLanguage.massegeSent ? 'blur(5px)' : 'none'}">
+<nav>
     <div class="nav-resp">
         <div class="navbar-left">
             <a routerLink="above-the-fold-container">
@@ -19,6 +19,15 @@
                 <img class="burger-menu-icon" src="../../assets/img/menu-icon.png" (click)="openMenu()">
                 }@else {
                 <img class="burger-menu-icon" src="../../assets/img/close-icon.png" (click)="closeMenu()">
+                }
+            </div>
+        </div>
+        <div class="popUp" [ngStyle]="{'display': this.changeLanguage.massegeSent ? 'block' : 'none'}">
+            <div class="popUpWindow">
+                @if(changeLanguage.englishLanguageActive){
+                    <span>{{ changeLanguage.MessageSentButtonEnglish }}</span>
+                }@else{
+                    <span>{{ changeLanguage.MessageSentButtonGerman }}</span>
                 }
             </div>
         </div>
