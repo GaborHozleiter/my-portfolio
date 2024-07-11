@@ -57,9 +57,8 @@
         left: 0;
         display: flex;
         justify-content: center;
-        z-index: 2;
         img {
-            top: 0px;
+            top: 645x;
             width: 620px;
             height: 620px;
         }
@@ -170,14 +169,12 @@
     .backgr-img {
         height: 150px;
         top: calc(340px + 100vh);
-        z-index: 3;
     }
 
     .img-cont {
         img {
             width: 400x;
             height: 400px;
-            object-fit: contain;
         }
     }
 }
@@ -201,9 +198,21 @@
         transform: scale(1.55);
         left: calc(50vw - 170px);
     }
+
+    .img-cont {
+        img {
+          top: 35px;
+        }
+    }
 }
 
 @media(max-width:430px){
+    .img-cont {
+        img {
+          top: 25px;
+        }
+    }
+
     .about-me-cont {
         height: 1060px;
     }
