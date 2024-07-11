@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { TranslateService } from '../translate.service';
 
 @Component({
@@ -8,9 +8,13 @@ import { TranslateService } from '../translate.service';
   templateUrl: './privacy-policy.component.html',
   styleUrl: './privacy-policy.component.scss'
 })
-export class PrivacyPolicyComponent {
+export class PrivacyPolicyComponent implements OnInit{
 
   changeLanguage = inject(TranslateService);
 
   emailAdress : string = 'developer@gabor-hozleiter.com';
+
+  ngOnInit(): void {
+      window.scrollTo(0,0);
+  }
 }
