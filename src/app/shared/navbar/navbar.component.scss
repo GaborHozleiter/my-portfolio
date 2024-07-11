@@ -168,13 +168,7 @@ img {
     }
 }
 
-@media(max-width: 700px){
-    .navbar-right {
-        gap: 16px;
-    }
-}
-
-@media(max-width: 650px){
+@media(max-width: 850px){
     .navbar-right a, .language, .parting-line{
         display: none
     }
@@ -185,6 +179,12 @@ img {
 
     .menu-item {
         display: block;
+    }
+}
+
+@media(max-width: 700px){
+    .navbar-right {
+        gap: 16px;
     }
 }
 

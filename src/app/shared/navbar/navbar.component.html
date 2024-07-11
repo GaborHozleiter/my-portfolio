@@ -10,6 +10,7 @@
                 <a href="#about-me-cont">{{ aboutMeText }}</a>
                 <a href="#skills-cont">Skills</a>
                 <a href="#portfolio-cont">Portfolio</a>
+                <a href="#contact-cont">Contact</a>
                 <div>
                     <span class="language" (click)="closeMenu()" (click)="german()" [ngStyle]="{'color' : changeLanguage.germanLanguageActive ? '#00B2D9' : 'white'}">de</span>
                     <span class="parting-line">|</span>
@@ -40,6 +41,7 @@
     <a href="#about-me-cont" (click)="closeMenu()">{{ aboutMeText }}</a>
     <a href="#skills-cont" (click)="closeMenu()">Skills</a>
     <a href="#portfolio-cont" (click)="closeMenu()">Portfolio</a>
+    <a href="#contact-cont" (click)="closeMenu()">Contact</a>
     <div>
         <span (click)="closeMenu()" (click)="german()" [ngStyle]="{'color' : changeLanguage.germanLanguageActive ? '#00B2D9' : 'white'}">de</span>
             <span class=".parting-line-opened">|</span>
