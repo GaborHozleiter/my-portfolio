@@ -9,7 +9,6 @@ import { TranslateService } from '../../translate.service';
   styleUrl: './skills.component.scss'
 })
 export class SkillsComponent implements OnInit {
-
   changeLanguage = inject(TranslateService);
 
   ngOnInit(): void {
@@ -26,21 +25,22 @@ export class SkillsComponent implements OnInit {
     const elementsLeft = document.querySelectorAll('.animation-cont-left');
     const windowHeight = window.innerHeight;
 
+    this.toggleInView(elements, windowHeight);
+    this.toggleInView(elementsLeft, windowHeight);
+  }
+
+  private toggleInView(elements: NodeListOf<Element>, windowHeight: number): void {
     elements.forEach(element => {
       const rect = element.getBoundingClientRect();
-      if (rect.top <= windowHeight * 0.85) {
-        (element as HTMLElement).classList.add('in-view');
-      } else {
-        (element as HTMLElement).classList.remove('in-view');
-      }
+      this.updateView(element, rect.top <= windowHeight * 0.85);
     });
-    elementsLeft.forEach(element => {
-      const rect = element.getBoundingClientRect();
-      if (rect.top <= windowHeight * 0.85) {
-        (element as HTMLElement).classList.add('in-view');
-      } else {
-        (element as HTMLElement).classList.remove('in-view');
-      }
-    });
+  }
+
+  private updateView(element: Element, inView: boolean): void {
+    if (inView) {
+      (element as HTMLElement).classList.add('in-view');
+    } else {
+      (element as HTMLElement).classList.remove('in-view');
+    }
   }
 }

@@ -12,8 +12,8 @@ import { RouterLink } from '@angular/router';
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
-export class ContactComponent implements OnInit{
 
+export class ContactComponent implements OnInit {
   changeLanguage = inject(TranslateService);
 
   ngOnInit(): void {
@@ -30,15 +30,12 @@ export class ContactComponent implements OnInit{
     const elementsLeft = document.querySelectorAll('.animation-cont-left');
     const windowHeight = window.innerHeight;
 
+    this.toggleInView(elements, windowHeight);
+    this.toggleInView(elementsLeft, windowHeight);
+  }
+
+  private toggleInView(elements: NodeListOf<Element>, windowHeight: number): void {
     elements.forEach(element => {
-      const rect = element.getBoundingClientRect();
-      if (rect.top <= windowHeight * 0.85) {
-        (element as HTMLElement).classList.add('in-view');
-      } else {
-        (element as HTMLElement).classList.remove('in-view');
-      }
-    });
-    elementsLeft.forEach(element => {
       const rect = element.getBoundingClientRect();
       if (rect.top <= windowHeight * 0.85) {
         (element as HTMLElement).classList.add('in-view');

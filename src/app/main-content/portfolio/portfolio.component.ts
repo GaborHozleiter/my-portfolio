@@ -10,8 +10,7 @@ import { TranslateService } from '../../translate.service';
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss'
 })
-export class PortfolioComponent implements OnInit{
-
+export class PortfolioComponent implements OnInit {
   changeLanguage = inject(TranslateService);
 
   ngOnInit(): void {
@@ -26,7 +25,10 @@ export class PortfolioComponent implements OnInit{
   private checkScroll(): void {
     const elements = document.querySelectorAll('.animation-cont');
     const windowHeight = window.innerHeight;
+    this.toggleInView(elements, windowHeight);
+  }
 
+  private toggleInView(elements: NodeListOf<Element>, windowHeight: number): void {
     elements.forEach(element => {
       const rect = element.getBoundingClientRect();
       if (rect.top <= windowHeight * 0.85) {

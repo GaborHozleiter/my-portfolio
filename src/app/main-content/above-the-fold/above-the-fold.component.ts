@@ -8,8 +8,8 @@ import { TranslateService } from '../../translate.service';
   templateUrl: './above-the-fold.component.html',
   styleUrls: ['./above-the-fold.component.scss', './above-the-fold-resp.component.scss']
 })
-export class AboveTheFoldComponent implements OnInit{
 
+export class AboveTheFoldComponent implements OnInit {
   changeLanguage = inject(TranslateService);
 
   ngOnInit(): void {
@@ -27,6 +27,12 @@ export class AboveTheFoldComponent implements OnInit{
     const elementsBottom = document.querySelectorAll('.animation-cont-bottom');
     const windowHeight = window.innerHeight;
 
+    this.toggleInView(elements, windowHeight);
+    this.toggleInView(elementsLeft, windowHeight);
+    this.toggleInView(elementsBottom, windowHeight);
+  }
+
+  private toggleInView(elements: NodeListOf<Element>, windowHeight: number): void {
     elements.forEach(element => {
       const rect = element.getBoundingClientRect();
       if (rect.top <= windowHeight * 0.85) {
@@ -35,24 +41,5 @@ export class AboveTheFoldComponent implements OnInit{
         (element as HTMLElement).classList.remove('in-view');
       }
     });
-
-    elementsLeft.forEach(element => {
-      const rect = element.getBoundingClientRect();
-      if (rect.top <= windowHeight * 0.85) {
-        (element as HTMLElement).classList.add('in-view');
-      } else {
-        (element as HTMLElement).classList.remove('in-view');
-      }
-    });
-
-    elementsBottom.forEach(element => {
-      const rect = element.getBoundingClientRect();
-      if (rect.top <= windowHeight * 0.85) {
-        (element as HTMLElement).classList.add('in-view');
-      } else {
-        (element as HTMLElement).classList.remove('in-view');
-      }
-    });
   }
-
 }
