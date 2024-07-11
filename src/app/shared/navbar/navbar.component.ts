@@ -42,4 +42,8 @@ export class NavbarComponent {
   closeMenu(){
     this.openedMenu = false;
   }
+
+  inactiveteRouterLink(){
+    this.changeLanguage.routerLinkActive = false;
+  }
 }

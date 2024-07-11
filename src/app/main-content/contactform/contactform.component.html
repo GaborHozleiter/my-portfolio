@@ -78,7 +78,7 @@
                 {{ changeLanguage.acceptPolicyTextLeftEnglish }}
             }@else{
                 {{changeLanguage.acceptPolicyTextLeftGerman  }}
-            } <a routerLink="privacy-policy">
+            } <a routerLink="privacy-policy" (click)="activeteRouterLink()">
                 @if(changeLanguage.englishLanguageActive){
                     {{ changeLanguage.privacyPolicyEnglish }}
                 }@else{

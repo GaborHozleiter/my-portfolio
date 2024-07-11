@@ -13,4 +13,13 @@ import { RouterLink } from '@angular/router';
 export class FooterComponent {
 
   changeLanguage = inject(TranslateService);
+
+
+  activeteRouterLink(){
+    this.changeLanguage.routerLinkActive = true;
+  }
+
+  inactiveteRouterLink(){
+    this.changeLanguage.routerLinkActive = false;
+  }
 }

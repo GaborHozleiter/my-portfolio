@@ -8,6 +8,7 @@ export class TranslateService {
   germanLanguageActive: boolean = false;
   englishLanguageActive: boolean = true;
   massegeSent : boolean = false;
+  routerLinkActive : boolean = false;
 
   aboutMeEnglish : string = 'About me';
   aboutMeGerman : string = 'Über mich';

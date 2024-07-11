@@ -2,7 +2,7 @@
 </div>
 <footer>
     <div class="footer-cont">
-        <div>
+        <div (click)="inactiveteRouterLink()">
             <a routerLink="above-the-fold-container">
                 <span class="name">Gabor</span>
             </a>
@@ -22,7 +22,7 @@
             </a>
         </div>
     </div>
-    <div class="imprint-cont">
+    <div class="imprint-cont" (click)="activeteRouterLink()">
         <a routerLink="imprint">
             @if(changeLanguage.englishLanguageActive){
                 <span>{{ changeLanguage.imprintEnglish }}</span>

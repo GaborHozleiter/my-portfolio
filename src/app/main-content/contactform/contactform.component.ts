@@ -67,4 +67,8 @@ export class ContactformComponent {
             });
         }
       }
+
+      activeteRouterLink(){
+        this.changeLanguage.routerLinkActive = true;
+      }
 }
