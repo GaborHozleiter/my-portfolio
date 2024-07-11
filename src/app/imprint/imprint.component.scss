@@ -1,7 +1,7 @@
 .imprint-cont {
     width: 1920px;
     left: calc(50vw - 960px);
-    height: calc(100vh - 400px);
+    min-height: calc(100vh - 400px);
     position: relative;
     display: flex;
     justify-content: flex-start;
