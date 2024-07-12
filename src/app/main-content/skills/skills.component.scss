@@ -60,6 +60,10 @@
     }
 }
 
+.hidden-cont {
+    opacity: 0;
+}
+
 .icon-name {
     font-family: 'Poppins';
     font-size: 16px;
@@ -233,6 +237,14 @@
 }
 
 @media(max-width: 700px){
+    .hidden-cont {
+        opacity: 1;
+    }
+
+    .hidden-cont-resp {
+        opacity: 0 !important;
+    }
+
     .skills-text-cont {
         margin-right: 0;
         width: calc(100vw - 100px);
@@ -257,16 +269,16 @@
     }
 
     .skills-cont {
-        padding-bottom: 375px;
+        padding-bottom: 250px;
     }
 
     .get-in-btn {
         position: absolute;
         bottom: 20px;
         left: calc(50vw - 150px);
-        transform: translateY(830px);
+        transform: translateY(680px);
         &:hover {
-            transform: translateY(830px) scaleX(1.1) scaleY(1.1);
+            transform: translateY(680px) scaleX(1.1) scaleY(1.1);
         }
     }
 
@@ -274,9 +286,9 @@
         position: absolute;
         bottom: 20px;
         left: calc(50vw - 175px);
-        transform: translateY(830px);
+        transform: translateY(680px);
         &:hover {
-            transform: translateY(830px) scaleX(1.1) scaleY(1.1);
+            transform: translateY(680px) scaleX(1.1) scaleY(1.1);
         }
     }
 
@@ -299,15 +311,19 @@
 }
 
 @media(max-width: 500px){
+    .skills-cont {
+        padding-bottom: 270px;
+    }
+    
     .get-in-btn {
         width: 158px;
         height: 49px;
         font-size: 18px;
         left: calc(50% - 79px);
         padding: 0;
-        transform: translateY(720px);
+        transform: translateY(590px);
         &:hover {
-            transform: translateY(720px) scaleX(1.1) scaleY(1.1);
+            transform: translateY(590px) scaleX(1.1) scaleY(1.1);
         }
     }
 
@@ -317,9 +333,9 @@
         font-size: 18px;
         left: calc(50% - 104px);
         padding: 0;
-        transform: translateY(720px);
+        transform: translateY(590px);
         &:hover {
-            transform: translateY(720px) scaleX(1.1) scaleY(1.1);
+            transform: translateY(590px) scaleX(1.1) scaleY(1.1);
         }
     }
 
@@ -352,16 +368,16 @@
     }
 
     .get-in-btn {
-        transform: translateY(620px);
+        transform: translateY(490px);
         &:hover {
-            transform: translateY(620px) scaleX(1.1) scaleY(1.1);
+            transform: translateY(490px) scaleX(1.1) scaleY(1.1);
         }
     }
 
     .get-in-btn-german {
-        transform: translateY(620px);
+        transform: translateY(490px);
         &:hover {
-            transform: translateY(620px) scaleX(1.1) scaleY(1.1);
+            transform: translateY(490px) scaleX(1.1) scaleY(1.1);
         }
     }
 }
@@ -372,9 +388,9 @@
     }
 
     .get-in-btn {
-        transform: translateY(520px);
+        transform: translateY(400px);
         &:hover {
-            transform: translateY(520px) scaleX(1.1) scaleY(1.1);
+            transform: translateY(400px) scaleX(1.1) scaleY(1.1);
         }
     }
 
