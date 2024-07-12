@@ -4,9 +4,9 @@
     height: calc(100vh - 109px);
     position: relative;
     left: 0;
-    background-image: url('../../../assets/img/shadow_mix.png');
+    background-image: url('../../../assets/img/shadow_mix2.png');
     background-repeat: no-repeat;
-    background-size: auto;
+    object-fit: contain;
     background-position: center 50%;
 }
 
