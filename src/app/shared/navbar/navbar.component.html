@@ -1,20 +1,21 @@
 <nav>
     <div class="nav-resp">
         <div class="navbar-left">
-            <a routerLink="above-the-fold-container"(click)="inactiveteRouterLink()">
+            <a routerLink="above-the-fold-container" (click)="inactiveteRouterLink()">
                 <span class="logo">Gabor</span>
             </a>
         </div>
         <div class="navbar-right">
-            @if(!changeLanguage.routerLinkActive){
-                <a href="#about-me-cont">{{ aboutMeText }}</a>
-                <a href="#skills-cont">Skills</a>
-                <a href="#portfolio-cont">Portfolio</a>
-                <a href="#contact-cont">Contact</a>
-                <div>
-                    <span class="language" (click)="closeMenu()" (click)="german()" [ngStyle]="{'color' : changeLanguage.germanLanguageActive ? '#00B2D9' : 'white'}">de</span>
-                    <span class="parting-line">|</span>
-                    <span class="language" (click)="closeMenu()" (click)="english()" [ngStyle]="{'color' : changeLanguage.englishLanguageActive ? '#00B2D9' : 'white'}">en</span>
+            <a href="#about-me-cont">{{ aboutMeText }}</a>
+            <a href="#skills-cont">Skills</a>
+            <a href="#portfolio-cont">Portfolio</a>
+            <a href="#contact-cont">Contact</a>
+            <div>
+                <span class="language" (click)="closeMenu()" (click)="german()"
+                    [ngStyle]="{'color' : changeLanguage.germanLanguageActive ? '#00B2D9' : 'white'}">de</span>
+                <span class="parting-line">|</span>
+                <span class="language" (click)="closeMenu()" (click)="english()"
+                    [ngStyle]="{'color' : changeLanguage.englishLanguageActive ? '#00B2D9' : 'white'}">en</span>
             </div>
             <div class="menu-icon">
                 @if(!openedMenu){
@@ -23,15 +24,13 @@
                 <img class="burger-menu-icon" src="../../assets/img/close-icon.png" (click)="closeMenu()">
                 }
             </div>
-            }
-            
         </div>
         <div class="popUp" [ngStyle]="{'display': this.changeLanguage.massegeSent ? 'block' : 'none'}">
             <div class="popUpWindow">
                 @if(changeLanguage.englishLanguageActive){
-                    <span>{{ changeLanguage.MessageSentButtonEnglish }}</span>
+                <span>{{ changeLanguage.MessageSentButtonEnglish }}</span>
                 }@else{
-                    <span>{{ changeLanguage.MessageSentButtonGerman }}</span>
+                <span>{{ changeLanguage.MessageSentButtonGerman }}</span>
                 }
             </div>
         </div>
@@ -43,8 +42,10 @@
     <a href="#portfolio-cont" (click)="closeMenu()">Portfolio</a>
     <a href="#contact-cont" (click)="closeMenu()">Contact</a>
     <div>
-        <span (click)="closeMenu()" (click)="german()" [ngStyle]="{'color' : changeLanguage.germanLanguageActive ? '#00B2D9' : 'white'}">de</span>
-            <span class=".parting-line-opened">|</span>
-            <span (click)="closeMenu()" (click)="english()" [ngStyle]="{'color' : changeLanguage.englishLanguageActive ? '#00B2D9' : 'white'}">en</span>   
+        <span (click)="closeMenu()" (click)="german()"
+            [ngStyle]="{'color' : changeLanguage.germanLanguageActive ? '#00B2D9' : 'white'}">de</span>
+        <span class=".parting-line-opened">|</span>
+        <span (click)="closeMenu()" (click)="english()"
+            [ngStyle]="{'color' : changeLanguage.englishLanguageActive ? '#00B2D9' : 'white'}">en</span>
     </div>
 </div>
