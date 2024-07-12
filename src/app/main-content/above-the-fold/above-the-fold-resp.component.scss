@@ -264,7 +264,7 @@
 
 
 @media(max-height:440px){
-    .above-the-fold-container {
-        padding-bottom: 100px;
+    button {
+        transform: translateY(-60px);
     }
 }
