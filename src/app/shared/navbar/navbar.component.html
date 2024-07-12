@@ -1,15 +1,15 @@
 <nav>
     <div class="nav-resp">
         <div class="navbar-left">
-            <a routerLink="above-the-fold-container" (click)="inactiveteRouterLink()">
+            <a routerLink="above-the-fold-container">
                 <span class="logo">Gabor</span>
             </a>
         </div>
         <div class="navbar-right">
-            <a href="#about-me-cont">{{ aboutMeText }}</a>
-            <a href="#skills-cont">Skills</a>
-            <a href="#portfolio-cont">Portfolio</a>
-            <a href="#contact-cont">Contact</a>
+                <a routerLink ="about-me-container" (click)="scrollToComponent('about-me-cont')">{{ aboutMeText }}</a>
+                <a routerLink ="skills-container" (click)="scrollToComponent('skills-cont')">Skills</a>
+                <a routerLink ="portfolio-container" (click)="scrollToComponent('portfolio-cont')">Portfolio</a>
+                <a routerLink ="contact-container" (click)="scrollToComponent('contact-cont')">Contact</a>
             <div>
                 <span class="language" (click)="closeMenu()" (click)="german()"
                     [ngStyle]="{'color' : changeLanguage.germanLanguageActive ? '#00B2D9' : 'white'}">de</span>
@@ -37,10 +37,10 @@
     </div>
 </nav>
 <div class="menu" [ngClass]="{'menu-window-opened': openedMenu , 'menu-window-closed': !openedMenu}">
-    <a href="#about-me-cont" (click)="closeMenu()">{{ aboutMeText }}</a>
-    <a href="#skills-cont" (click)="closeMenu()">Skills</a>
-    <a href="#portfolio-cont" (click)="closeMenu()">Portfolio</a>
-    <a href="#contact-cont" (click)="closeMenu()">Contact</a>
+    <a routerLink="about-me-container" (click)="closeMenu();scrollToComponent('about-me-cont')">{{ aboutMeText }}</a>
+    <a routerLink="skills-container" (click)="closeMenu();scrollToComponent('skills-cont')">Skills</a>
+    <a routerLink="portfolio-container" (click)="closeMenu();scrollToComponent('portfolio-cont')">Portfolio</a>
+    <a routerLink="contact-container" (click)="closeMenu();scrollToComponent('contact-cont')">Contact</a>
     <div>
         <span (click)="closeMenu()" (click)="german()"
             [ngStyle]="{'color' : changeLanguage.germanLanguageActive ? '#00B2D9' : 'white'}">de</span>

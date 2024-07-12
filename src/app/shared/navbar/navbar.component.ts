@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+import { CommonModule, ViewportScroller } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { TranslateService } from '../../translate.service';
 import { RouterLink } from '@angular/router';
@@ -11,6 +11,9 @@ import { RouterLink } from '@angular/router';
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
+  constructor( public viewportScroller : ViewportScroller){
+
+  }
 
   changeLanguage = inject(TranslateService);
 
@@ -43,7 +46,9 @@ export class NavbarComponent {
     this.openedMenu = false;
   }
 
-  inactiveteRouterLink(){
-    this.changeLanguage.routerLinkActive = false;
+  scrollToComponent(compoentId : string) : void{
+    setTimeout(() => {
+        this.viewportScroller.scrollToAnchor(compoentId);
+    }, 5);
   }
 }
