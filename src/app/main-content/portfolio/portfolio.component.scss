@@ -182,7 +182,7 @@
     }
 
     #portfolio-cont {
-        top: 460px;
+        top: 515px;
     }
 
     .portfolio-title {
@@ -245,7 +245,7 @@
     }
 
     #portfolio-cont {
-        top: -100px;
+        top: -110px;
         z-index: 5;
     }
 
@@ -265,6 +265,8 @@
 }
 
 @media(max-width:500px){
+    
+
     .portfolio-title {
         font-size: 55px;
         left: calc(50vw - 119px);
