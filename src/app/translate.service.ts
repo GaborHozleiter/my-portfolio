@@ -12,6 +12,8 @@ export class TranslateService {
 
   aboutMeEnglish : string = 'About me';
   aboutMeGerman : string = 'Über mich';
+  contactEnglish : string = 'Contact';
+  contactGerman : string = 'Kontakt';
   iAmEnglish : string = 'I am';
   iAmGerman : string = 'Ich bin';
   letsTalkEnglish : string = 'Let’s talk!';

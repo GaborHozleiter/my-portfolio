@@ -19,11 +19,13 @@ export class NavbarComponent {
 
   openedMenu: boolean = false;
   aboutMeText : string = this.changeLanguage.aboutMeEnglish;
+  contactText : string = this.changeLanguage.contactEnglish;
 
   german(){
     this.changeLanguage.germanLanguageActive = true;
     this.changeLanguage.englishLanguageActive = false;
     this.aboutMeText = this.changeLanguage.aboutMeGerman;
+    this.contactText = this.changeLanguage.contactGerman;
     this.changeLanguage.placeholderName = this.changeLanguage.placeholderNameGerman;
     this.changeLanguage.placeholderEmail = this.changeLanguage.placeholderEmailGerman;
     this.changeLanguage.placeholderMessage = this.changeLanguage.placeholderMessageGerman;
@@ -33,6 +35,7 @@ export class NavbarComponent {
     this.changeLanguage.germanLanguageActive = false;
     this.changeLanguage.englishLanguageActive = true;
     this.aboutMeText = this.changeLanguage.aboutMeEnglish;
+    this.contactText = this.changeLanguage.contactEnglish;
     this.changeLanguage.placeholderName = this.changeLanguage.placeholderNameEnglish;
     this.changeLanguage.placeholderEmail = this.changeLanguage.placeholderEmailEnglish;
     this.changeLanguage.placeholderMessage = this.changeLanguage.placeholderMessageEnglish;

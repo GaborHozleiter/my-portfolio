@@ -9,7 +9,7 @@
                 <a routerLink ="about-me-container" (click)="scrollToComponent('about-me-cont')">{{ aboutMeText }}</a>
                 <a routerLink ="skills-container" (click)="scrollToComponent('skills-cont')">Skills</a>
                 <a routerLink ="portfolio-container" (click)="scrollToComponent('portfolio-cont')">Portfolio</a>
-                <a routerLink ="contact-container" (click)="scrollToComponent('contact-cont')">Contact</a>
+                <a routerLink ="contact-container" (click)="scrollToComponent('contact-cont')">{{ contactText }}</a>
             <div>
                 <span class="language" (click)="closeMenu()" (click)="german()"
                     [ngStyle]="{'color' : changeLanguage.germanLanguageActive ? '#00B2D9' : 'white'}">de</span>
@@ -40,7 +40,7 @@
     <a routerLink="about-me-container" (click)="closeMenu();scrollToComponent('about-me-cont')">{{ aboutMeText }}</a>
     <a routerLink="skills-container" (click)="closeMenu();scrollToComponent('skills-cont')">Skills</a>
     <a routerLink="portfolio-container" (click)="closeMenu();scrollToComponent('portfolio-cont')">Portfolio</a>
-    <a routerLink="contact-container" (click)="closeMenu();scrollToComponent('contact-cont')">Contact</a>
+    <a routerLink="contact-container" (click)="closeMenu();scrollToComponent('contact-cont')">{{ contactText }}</a>
     <div>
         <span (click)="closeMenu()" (click)="german()"
             [ngStyle]="{'color' : changeLanguage.germanLanguageActive ? '#00B2D9' : 'white'}">de</span>
