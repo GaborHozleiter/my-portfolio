@@ -4,11 +4,12 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { SkillsComponent } from './skills/skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
+import { MyPortfolioComponent } from './my-portfolio/my-portfolio.component';
 
 @Component({
   selector: 'app-main-content',
   standalone: true,
-  imports: [AboveTheFoldComponent, AboutMeComponent, SkillsComponent, PortfolioComponent,
+  imports: [AboveTheFoldComponent, AboutMeComponent, SkillsComponent, PortfolioComponent, MyPortfolioComponent,
     ContactComponent],
   templateUrl: './main-content.component.html',
   styleUrl: './main-content.component.scss'
