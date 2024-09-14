@@ -21,7 +21,7 @@
         </div>
     </div>
 </div>
-<div class="portfolio-project-container">
+<div class="portfolio-project-container portfolio-project-container-top">
     <div class="portfolio-project" *ngFor="let project of projects; let i = index"
         [ngClass]="{'display-flex': i % 3 === 0 || i % 3 === 2, 'display-none': i % 3 === 1}">
         <div class="anim-cont">
@@ -52,7 +52,7 @@
         </div>
     </div>
 </div>
-<div class="portfolio-project-container">
+<div class="portfolio-project-container portfolio-project-container-bottom">
     <div class="portfolio-project" *ngFor="let project of projects; let i = index"
     [ngClass]="{'display-none': i % 3 === 0 || i % 3 === 2, 'display-flex': i % 3 === 1}">
     <div class="anim-cont">
