@@ -15,8 +15,8 @@ export class MyPortfolioComponent implements OnInit {
     {
       name :   'DABubble',
       skills : 'Angular | TypeScript | Firebase',
-      descriptionEnglish : 'A powerful and user-friendly slack or discord clone that enables seamless team communication, collaboration, and organization.',
-      descriptionGerman : 'Ein leistungsstarker und benutzerfreundlicher Slack- bzw. Discord-Klon, der Ihnen nahtlose Teamkommunikation, Zusammenarbeit und Organisation ermöglicht.',
+      descriptionEnglish : 'Business-focused chat app inspired by Slack. Create channels, add members, or start private chats with colleagues.',
+      descriptionGerman : 'Geschäftsorientierte Chat-App, inspiriert von Slack. Erstelle Kanäle, füge Mitglieder hinzu oder starte private Chats mit Kollegen.',
       testLink : 'https://pollo-loco.gabor-hozleiter.com/',
       githubLink : 'https://github.com/GaborHozleiter/El_Pollo_Loco',
       background : '../../../assets/img/dabubble_background.png',
