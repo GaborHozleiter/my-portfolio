@@ -13,16 +13,6 @@ export class MyPortfolioComponent implements OnInit {
 
   projects = [
     {
-      name :   'DABubble',
-      skills : 'Angular | TypeScript | Firebase',
-      descriptionEnglish : 'Business-focused chat app inspired by Slack. Create channels, add members, or start private chats with colleagues.',
-      descriptionGerman : 'Geschäftsorientierte Chat-App, inspiriert von Slack. Erstelle Kanäle, füge Mitglieder hinzu oder starte private Chats mit Kollegen.',
-      testLink : 'https://pollo-loco.gabor-hozleiter.com/',
-      githubLink : 'https://github.com/GaborHozleiter/El_Pollo_Loco',
-      background : '../../../assets/img/dabubble_background.png',
-      backgroundNotebook : '../../../assets/img/dabubble_pc.png'
-    },
-    {
       name :   'Pollo Loco',
       skills : 'JavaScript | HTML | CSS',
       descriptionEnglish : 'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',

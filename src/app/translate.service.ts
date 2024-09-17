@@ -19,8 +19,8 @@ export class TranslateService {
   letsTalkEnglish : string = 'Let’s talk!';
   letsTalkGerman : string = 'Lass uns reden!';
   aboutMeTextTopEnglish : string = 'Hello. My name is Gabor and I am from Seelze in Lower Saxony. I work on various programming projects with great enthusiasm and welcome every new challenge.';
-  aboutMeTextCenterEnglish : string = 'I have extensive knowledge in front-end development and am always open to new technologies. My ability to quickly adapt to new tools and trends allows me to develop innovative solutions.';
-  aboutMeTextBottomEnglish : string = 'Through the Developer Academy, I have expanded my frontend development skills and am confident and competent in software development. I look forward to applying and deepening my knowledge in a new job.';
+  aboutMeTextCenterEnglish : string = 'I have extensive knowledge in front-end development and I am always open to new technologies. My ability to quickly adapt to new tools and trends allows me to develop innovative solutions.';
+  aboutMeTextBottomEnglish : string = 'Through the Developer Akademie, I have expanded my frontend development skills and I am confident and competent in software development. I`am looking forward to applying and deepening my knowledge in a new job.';
   aboutMeTextTopGerman : string = 'Hallo. Ich heiße Gabor und komme aus Seelze in Niedersachsen. Begeistert arbeite ich an verschiedenen Programmierprojekten und freue mich über jede neue Herausforderung.';
   aboutMeTextCenterGerman : string = 'Ich habe umfassende Kenntnisse in der Frontend-Entwicklung und bin offen für neue Technologien. Dank meiner schnellen Einarbeitung in neue Tools kann ich innovative Lösungen entwickeln.';
   aboutMeTextBottomGerman : string = 'Durch die Developer Akademie habe ich meine Frontend-Fähigkeiten ausgebaut und bin kompetent in Software-Entwicklung. Ich freue mich darauf, mein Wissen in einem neuen Job zu vertiefen.';
@@ -28,11 +28,11 @@ export class TranslateService {
   skillsDescriptionGerman : string = 'Ich habe Erfahrung im Erstellen von Projekten mit verschiedenen Frontend-Technologien und -Konzepten gesammelt.';
   skillsButtonTextEnglish : string = 'Get in touch';
   skillsButtonTextGerman : string = 'Kontaktiere mich';
-  portfolioDescriptionEnglish : string = 'This page is a sample of my work! scroll down to view other projects I have develped.';
+  portfolioDescriptionEnglish : string = 'This page is a sample of my work! Scroll down to view other projects I have developed.';
   portfolioDescriptionGerman : string = 'Diese Seite ist ein Beispiel meiner Arbeit! Scrollen Sie nach unten, um weitere Projekte zu sehen.';
   contactSolverTitleEnglish : string = 'Got a problem to solve?';
   contactSolverTitleGerman : string = 'Ein Problem zu lösen?';
-  contactSolverDescriptionEnglish : string = 'Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.';
+  contactSolverDescriptionEnglish : string = 'Contact me through this form. I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.';
   contactSolverDescriptionGerman : string = 'Kontaktiere mich über dieses Formular. Ich freue mich darauf, deine Ideen kennenzulernen und mit meiner Arbeit zu deinen Projekten beizutragen.';
   contactSolverAskEnglish : string = 'Need a Frontend developer?';
   contactSolverAskGerman : string = 'Brauchst du einen Frontend-Entwickler?';
