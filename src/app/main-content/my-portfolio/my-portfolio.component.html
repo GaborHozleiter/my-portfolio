@@ -22,7 +22,39 @@
     </div>
 </div>
 <div class="portfolio-project-container portfolio-project-container-top">
-    <div class="portfolio-project" *ngFor="let project of projects; let i = index">
+    <div class="portfolio-project" *ngFor="let project of projects; let i = index" 
+    [ngClass]="{'display-flex': i % 3 === 0 || i % 3 === 2, 'display-none': i % 3 === 1}">
+        <div class="anim-cont">
+            <div class="project-img">
+                <img src="{{ project.backgroundNotebook }}">
+            </div>
+            <div>
+                <img class="project-background" src="{{ project.background }}">
+            </div>
+            <div class="white-block">
+                <span class="project-name">{{ project.name }}</span>
+                @if(changeLanguage.englishLanguageActive){
+                <span class="project-description">{{ project.descriptionEnglish }}</span>
+                }@else{
+                <span class="project-description">{{ project.descriptionGerman }}</span>
+                }
+
+                <span class="project-skills">{{ project.skills }}</span>
+            </div>
+            <div class="buttons-cont">
+                <a href="{{ project.githubLink }}" target="_blank">
+                    <button class="github-button">Github</button>
+                </a>
+                <a href="{{ project.testLink }}" target="_blank">
+                    <button class="live-test-button">Live test</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-project-container portfolio-project-container-bottom">
+    <div class="portfolio-project" *ngFor="let project of projects; let i = index" 
+    [ngClass]="{'display-none': i % 3 === 0 || i % 3 === 2, 'display-flex': i % 3 === 1}">
         <div class="anim-cont">
             <div class="project-img">
                 <img src="{{ project.backgroundNotebook }}">
